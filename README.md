@@ -30,3 +30,6 @@ This is automatically pulled to the production server!
 ## Helpfull links and info ##
 
 [Markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet "Markdown Cheat Sheet")
+
+[Git Flow](https://datasift.github.io/gitflow/IntroducingGitFlow.html "Git Flow ")
+
