@@ -40,3 +40,6 @@ sudo git init
 sudo git remote add origin https://github.com/CP3402-2017-1/a2-cp3402-2017-team12/
 sudo git fetch
 sudo git checkout -F master 
+
+
+testin...4
