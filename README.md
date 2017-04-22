@@ -41,5 +41,5 @@ sudo git remote add origin https://github.com/CP3402-2017-1/a2-cp3402-2017-team1
 sudo git fetch
 sudo git checkout -F master 
 
+dont forget to run sudo webhook-deployer -c /home/ubuntu/webhook-deployer.conf -d
 
-testin...4
