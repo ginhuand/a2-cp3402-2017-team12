@@ -33,8 +33,7 @@ This is automatically pulled to the production server!
 
 [Git Flow](https://datasift.github.io/gitflow/IntroducingGitFlow.html "Git Flow ")
 
-<<<<<<< HEAD
-=======
+
 [webhook deployer](https://github.com/Camme/webhook-deployer)
 
 ### To setup git origin in current directory without creating a project directory (for prduction server) ###
@@ -45,4 +44,3 @@ sudo git checkout -F master
 
 dont forget to run sudo webhook-deployer -c /home/ubuntu/webhook-deployer.conf -d
 
->>>>>>> release/Release-2
