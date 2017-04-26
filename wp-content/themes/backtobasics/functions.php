@@ -72,6 +72,35 @@ endif;
 add_action( 'after_setup_theme', 'backtobasics_setup' );
 
 /**
+ * Register custom fonts.
+ */
+function backtobasics_fonts_url() {
+    $fonts_url = '';
+
+    /**
+     * Translators: If there are characters in your language that are not
+     * supported by Libre Franklin, translate this to 'off'. Do not translate
+     * into your own language.
+     */
+    $libre_franklin = _x( 'on', 'Libre Franklin font: on or off', 'backtobasics' );
+
+    if ( 'off' !== $libre_franklin ) {
+        $font_families = array();
+
+        $font_families[] = 'Libre Franklin:300,300i,400,400i,600,600i,800,800i';
+
+        $query_args = array(
+            'family' => urlencode( implode( '|', $font_families ) ),
+            'subset' => urlencode( 'latin,latin-ext' ),
+        );
+
+        $fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
+    }
+
+    return esc_url_raw( $fonts_url );
+}
+
+/**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * Priority 0 to make it available to lower priority callbacks.
@@ -105,6 +134,9 @@ add_action( 'widgets_init', 'backtobasics_widgets_init' );
  * Enqueue scripts and styles.
  */
 function backtobasics_scripts() {
+    //Enqueue google fonts: Source Sans Pro and PT Serif
+    wp_enqueue_style( 'backtobasics-fonts', backtobasics_fonts_url() );
+
 	wp_enqueue_style( 'backtobasics-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'backtobasics-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
