@@ -79,15 +79,22 @@ function backtobasics_fonts_url() {
 
     /**
      * Translators: If there are characters in your language that are not
-     * supported by Libre Franklin, translate this to 'off'. Do not translate
+     * supported by Source Sans Pro and PT Serif, translate this to 'off'. Do not translate
      * into your own language.
      */
-    $libre_franklin = _x( 'on', 'Libre Franklin font: on or off', 'backtobasics' );
+    $source_sans_pro = _x( 'on', 'Source Sans Pro font: on or off', 'backtobasics' );
+    $pt_serif = _x( 'on', 'PT Serif font: on or off', 'backtobasics' );
 
-    if ( 'off' !== $libre_franklin ) {
-        $font_families = array();
+    $font_families = array();
 
-        $font_families[] = 'Libre Franklin:300,300i,400,400i,600,600i,800,800i';
+    if ( 'off' !== $source_sans_pro ) {
+        $font_families[] = 'Source Sans Pro:400,400i,700,900';
+    }
+
+    if ( 'off' !== pt_serif ) {
+        $font_families[] = 'PT Serif:400,400i,700,700i';
+    }
+    if ( in_array( 'on', array($source_sans_pro, $pt_serif) ) ) {
 
         $query_args = array(
             'family' => urlencode( implode( '|', $font_families ) ),
