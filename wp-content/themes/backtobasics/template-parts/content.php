@@ -11,6 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+        <?php backtobasics_the_category_list(); ?>
 		<?php
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -34,10 +35,10 @@
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'backtobasics' ),
-				'after'  => '</div>',
-			) );
+        wp_link_pages( array(
+            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'backtobasics' ),
+            'after'  => '</div>',
+        ) );
 		?>
 	</div><!-- .entry-content -->
 

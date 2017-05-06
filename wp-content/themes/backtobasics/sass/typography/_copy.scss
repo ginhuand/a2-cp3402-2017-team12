@@ -7,6 +7,28 @@ dfn, cite, em, i {
 }
 
 blockquote {
+  position: relative;
+  margin: 0 0 1em;
+  background: $color__background-pre;
+  padding: 1em 2em .5em 5em;
+  font-style: italic;
+  -webkit-border-radius: 15px 50px;
+  -moz-border-radius: 15px 50px;
+  border-radius: 15px 50px;
+
+  &:before {
+    position: absolute;
+    top: -.2em;
+    left: -.13em;
+    content: '"';
+    font-family: "Baskerville Old Face", cursive;
+    font-size: 12em;
+    line-height: 100%;
+    color: white;
+  }
+}
+
+blockquote {
 	margin: 0 1.5em;
 }
 

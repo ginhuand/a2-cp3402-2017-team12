@@ -1,3 +1,9 @@
+$color__banner: white; //top banner
+$color__banner__bottom: orange; //footer banner
+$color__skin: #002254;  //header and social media
+$color__interactive: royalblue;
+
+
 $color__background-body: #fff;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
@@ -5,13 +11,13 @@ $color__background-button: #e6e6e6;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 
-$color__text-screen: #21759b;
+$color__text-screen: #000000;
 $color__text-input: #666;
 $color__text-input-focus: #111;
 $color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
-$color__text-main: #404040;
+$color__link-visited: orange;
+$color__link-hover: $color__interactive;
+$color__text-main: #000000;
 
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
