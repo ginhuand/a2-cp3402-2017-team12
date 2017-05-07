@@ -1,0 +1,47 @@
+.archive-view {
+  background-color: rgba(238, 238, 198, 0.31);
+
+  .post {
+    position: relative;
+    background: white;
+  }
+
+  .post__content {
+    padding: 2em 2em 3em;
+  }
+
+  @media screen and (min-width: $query__medium) {
+    &.has-sidebar {
+      .site-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .content-area {
+        width: $size__ratio-large;
+      }
+      .widget-area {
+        width: $size__ratio-small;
+      }
+    }
+  }
+}
+
+.continue-reading {
+  position: absolute;
+  bottom: 0;
+  font-family: $font__sans;
+
+  a {
+    display: block;
+    padding: .5em 1em;
+    font-size: 90%;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: black;
+    }
+  }
+
+}
