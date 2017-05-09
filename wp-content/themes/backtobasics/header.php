@@ -10,7 +10,7 @@
  */
 
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> class="no-svg">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,8 +24,8 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'backtobasics' ); ?></a>
 
     <div id="masthead-top" class="site-banner">
+        <?php the_custom_logo() ?>
         <nav id="site-navigation" class="main-navigation media__navigation" role="navigation">
-            <?php the_custom_logo() ?>
             <button class="menu-toggle" aria-controls="top-menu" aria-expanded="false">
                 <?php esc_html_e ('menu', 'backtobasics' ); ?></button>
             <?php wp_nav_menu(array( 'theme_location' => 'top', 'menu_id' => 'top-menu') ); ?>

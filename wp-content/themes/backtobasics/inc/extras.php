@@ -22,6 +22,7 @@ function backtobasics_body_classes( $classes ) {
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
+        $classes[] = 'archive-view';
 	}
 
 	//Add a class for sidebar in use
@@ -29,6 +30,11 @@ function backtobasics_body_classes( $classes ) {
         $classes[] = 'has-sidebar';
     } else {
 	    $classes[] = 'no-sidebar';
+    }
+
+    //add a class if page sidebar is in use
+    if ( is_active_sidebar( 'sidebar-2') ) {
+	    $classes[] = 'has-page-sidebar';
     }
 	return $classes;
 }

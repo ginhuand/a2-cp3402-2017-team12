@@ -17,7 +17,7 @@
 
 <footer id="colophon" class="site-info" role="contentinfo">
     <div class="footer-banner">
-        <nav id="site-navigation" class="footer__navigation" role="navigation">
+        <nav id="site-navigation" class="main-navigation footer__navigation" role="navigation">
             <button class="menu-toggle" aria-controls="footer-menu" aria-expanded="false">
                 <?php esc_html_e ('menu', 'backtobasics' ); ?>
             </button>
@@ -37,7 +37,7 @@
                         'menu_class' => 'social-links-menu',
                         'depth' => 1,
                         'link_before' => '<span class ="screen-reader-text">',
-                        //'link_after' => '</span>' . backtobasics_get_svg( array( 'icon' => 'chain' ) ),
+                        'link_after' => '</span>' . backtobasics_get_svg( array( 'icon' => 'chain' ) ),
                     ));
                     ?>
                 </nav><!--.social-menu-->

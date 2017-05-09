@@ -43,6 +43,7 @@ function backtobasics_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	add_image_size( 'backtobasics-full-bleed', 2000, 1200, true);
+	add_image_size( 'backtobasics-index-image', 1000, 550, true);
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -158,6 +159,78 @@ function backtobasics_content_width() {
 add_action( 'after_setup_theme', 'backtobasics_content_width', 0 );
 
 /**
+ * Add custom image sizes attribute to enhance responsive image functionality
+ * for content images.
+ *
+ * @origin Twenty Seventeen 1.0
+ *
+ * @param string $sizes A source size value for use in a 'sizes' attribute.
+ * @param array  $size  Image size. Accepts an array of width and height
+ *                      values in pixels (in that order).
+ * @return string A source size value for use in a content image 'sizes' attribute.
+ */
+function backtobasics_content_image_sizes_attr( $sizes, $size ) {
+    $width = $size[0];
+
+    if ( 900 <= $width ) {
+        $sizes = '(min-width: 900px) 700px, 900px';
+    }
+
+    if ( is_active_sidebar( 'sidebar-1' ) || is_active_sidebar( 'sidebar-2' ) ) {
+        $sizes = '(min-width: 900px) 600px, 900px';
+    }
+
+    return $sizes;
+}
+add_filter( 'wp_calculate_image_sizes', 'backtobasics_content_image_sizes_attr', 10, 2 );
+
+/**
+ * Filter the `sizes` value in the header image markup.
+ *
+ * @origin Twenty Seventeen 1.0
+ *
+ * @param string $html   The HTML image tag markup being filtered.
+ * @param object $header The custom header object returned by 'get_custom_header()'.
+ * @param array  $attr   Array of the attributes for the image tag.
+ * @return string The filtered header image HTML.
+ */
+function backtobasics_header_image_tag( $html, $header, $attr ) {
+    if ( isset( $attr['sizes'] ) ) {
+        $html = str_replace( $attr['sizes'], '100vw', $html );
+    }
+    return $html;
+}
+add_filter( 'get_header_image_tag', 'backtobasics_header_image_tag', 10, 3 );
+
+/**
+ * Add custom image sizes attribute to enhance responsive image functionality
+ * for post thumbnails.
+ *
+ * @origin Twenty Seventeen 1.0
+ *
+ * @param array $attr       Attributes for the image markup.
+ * @param int   $attachment Image attachment ID.
+ * @param array $size       Registered image size or flat array of height and width dimensions.
+ * @return string A source size value for use in a post thumbnail 'sizes' attribute.
+ */
+function backtobasics_post_thumbnail_sizes_attr( $attr, $attachment, $size ) {
+
+    if ( !is_singular() ) {
+        if ( is_active_sidebar( 'sidebar-1' ) ) {
+            $attr['sizes'] = '(max-width: 900px) 90vw, 800px';
+        } else {
+            $attr['sizes'] = '(max-width: 1000px) 90vw, 1000px';
+        }
+    } else {
+        $attr['sizes'] = '100vw';
+    }
+
+    return $attr;
+}
+add_filter( 'wp_get_attachment_image_attributes', 'backtobasics_post_thumbnail_sizes_attr', 10, 3 );
+
+
+/**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
@@ -172,6 +245,16 @@ function backtobasics_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+    register_sidebar( array(
+        'name'          => esc_html__( 'Page Sidebar', 'backtobasics' ),
+        'id'            => 'sidebar-2',
+        'description'   => esc_html__( 'Add page sidebar widgets here.', 'backtobasics' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
 
     register_sidebar( array(
         'name'          => esc_html__( 'Footer Widgets', 'backtobasics' ),
@@ -234,3 +317,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load SVG icon functions
+ */
+require get_template_directory() . '/inc/icon-functions.php';

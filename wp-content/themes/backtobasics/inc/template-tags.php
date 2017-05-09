@@ -143,3 +143,11 @@ function backtobasics_post_navigation() {
 			'<span class="post-title">%title</span>',
 	) );
 }
+
+/**
+ * Customise the end of excerpts
+ */
+function backtobasics_excerpt_end ($more){
+    return "...";
+}
+add_filter( 'excerpt_more', 'backtobasics_excerpt_end');

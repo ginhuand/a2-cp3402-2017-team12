@@ -1,5 +1,5 @@
 .widget-area {
-	margin-top: 1.5em;
+	//margin-top: 1.5em;
 }
 
 /* Footer widgets for archive pages */
@@ -41,13 +41,16 @@
 	}
 
 	a {
-		font-weight: 600;
+		font-weight: 100;
 		text-decoration: none;
+        color: $color__interactive;
 
 		&:hover,
 		&:focus {
-			border-bottom: 3px solid $color__interactive;
+          color: $color__banner__bottom;
 		}
+
+
 	}
 
 	/* Make sure select elements fit in widgets. */
@@ -64,7 +67,7 @@
 .widget-title {
 	margin-top: 0;
 	margin-bottom: .5em;
-	font-size: 1.4em;
+	font-size: 1.1em;
 }
 
 /* Archive and Categories widgets */
@@ -121,6 +124,7 @@
 	li {
 		line-height: 1.3em;
 		padding-bottom: .5em;
+		color: black;
 	}
 
 	a:hover,
@@ -159,7 +163,7 @@
 	width: 100%;
 	padding: .5em 1em;
 	border: 1px solid #c3c3c3;
-	border-radius: 0;
+	border-radius: 15px 30px;
 }
 
 /* Calendar widget */
@@ -213,12 +217,12 @@
 }
 
 
-/* Footer widget stylings */
+/* Footer widgets */
 
 .footer-widgets {
 	margin: 2em 0 0;
 	padding: 1em 0;
-	background-color: hsl(0, 0%, 70%);
+	background-color: lightgray;
 
 	@media screen and (min-width: $query__small) {
 		padding: 2em 1em;
@@ -235,12 +239,26 @@
 	}
 
 	.widget,
-	.widget-title,
 	.widget a,
 	.widget_calendar thead,
 	.rss-date,
 	.widget_rss cite {
-		color: white;
+		color: black;
+		font-size: 16px;
+	}
+
+    .widget a {
+      text-decoration: none;
+      color: $color__interactive;
+
+      &:hover,
+      &:focus {
+        color: $color__banner__bottom;
+      }
+    }
+
+	.widget-title {
+		color: black;
 	}
 
 	.widget_calendar td,
