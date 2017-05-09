@@ -44,8 +44,8 @@ endif; ?>
             endwhile;
 
             the_posts_pagination(array(
-                'prev_text' => backtobasics_get_svg( array( 'icon' => 'arrow-left', 'fallback' => true ) ) . __( 'Newer', 'humescores' ),
-                'next_text' => __( 'Older', 'humescores' ) . backtobasics_get_svg( array( 'icon' => 'arrow-right' , 'fallback' => true ) )
+                'prev_text' => backtobasics_get_svg( array( 'icon' => 'arrow-left', 'fallback' => true ) ) . __( 'Newer', 'backtobasics' ),
+                'next_text' => __( 'Older', 'backtobasics' ) . backtobasics_get_svg( array( 'icon' => 'arrow-right' , 'fallback' => true ) )
             ));
             ?>
 
