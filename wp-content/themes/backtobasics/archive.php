@@ -44,7 +44,11 @@ endif; ?>
             endwhile;
 
             the_posts_pagination(array(
+<<<<<<< Updated upstream
                 'prev_text' => backtobasics_get_svg( array( 'icon' => 'arrow-left', 'fallback' => true ) ) . __( 'Newer', 'backtobasics' ),
+=======
+                'prev_text' => backtobasics_get_svg( array( 'icon' => 'arrow-left', 'fallback' => true ) ) . __( 'Recent', 'backtobasics' ),
+>>>>>>> Stashed changes
                 'next_text' => __( 'Older', 'backtobasics' ) . backtobasics_get_svg( array( 'icon' => 'arrow-right' , 'fallback' => true ) )
             ));
             ?>

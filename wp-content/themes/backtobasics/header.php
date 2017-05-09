@@ -60,8 +60,4 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
-    <figure class="header-image">
-    <?php the_header_image_tag() ?>
-    </figure><!-- .header-image -->
-
     <div id="content" class="site-content">

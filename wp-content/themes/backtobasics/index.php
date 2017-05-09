@@ -16,6 +16,11 @@ get_header(); ?>
 
 <?php if (have_posts()) : ?>
 
+    <figure class="header-image">
+        <?php if ( is_home())
+            echo do_shortcode("[huge_it_slider id='1']"); ?>
+    </figure><!-- .header-image -->
+
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 
