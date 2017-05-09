@@ -18,7 +18,8 @@
 	position: relative;
 	padding: 1em;
 	font-family: $font__sans;
-	color: #fff;
+	// was: color: #fff;
+	color: #828;
 	background-color: $color__skin;
 	
 	@media screen and (min-width: $query__small) {
