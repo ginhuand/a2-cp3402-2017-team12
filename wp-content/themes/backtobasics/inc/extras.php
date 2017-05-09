@@ -22,8 +22,20 @@ function backtobasics_body_classes( $classes ) {
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
+        $classes[] = 'archive-view';
 	}
 
+	//Add a class for sidebar in use
+    if (is_active_sidebar('sidebar-1' ) ) {
+        $classes[] = 'has-sidebar';
+    } else {
+	    $classes[] = 'no-sidebar';
+    }
+
+    //add a class if page sidebar is in use
+    if ( is_active_sidebar( 'sidebar-2') ) {
+	    $classes[] = 'has-page-sidebar';
+    }
 	return $classes;
 }
 add_filter( 'body_class', 'backtobasics_body_classes' );
