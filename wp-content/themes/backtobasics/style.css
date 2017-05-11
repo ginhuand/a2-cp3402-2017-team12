@@ -2585,4 +2585,58 @@ object {
 	}
 }
 
+/* SVG Icons base styles */
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+	position: relative;
+	/* Align more nicely with capital letters */
+	top: -0.0625em;
+	vertical-align: middle;
+}
+
+/*--------------------------------------------------------------
+SVG Fallbacks
+--------------------------------------------------------------*/
+.svg-fallback {
+	display: none;
+}
+
+.no-svg .svg-fallback {
+	display: inline-block;
+}
+
+.no-svg .nav-links .svg-fallback {
+	padding: 0 .5em;
+	color: inherit;
+	background: inherit;
+}
+
+.no-svg .svg-fallback.icon-arrow-left:before {
+	content: "<<";
+}
+
+.no-svg .svg-fallback.icon-arrow-right:before {
+	content: ">>";
+}
+
+/* Social Menu fallbacks */
+.no-svg .social-menu a {
+	height: auto;
+	width: auto;
+}
+
+.no-svg .social-menu li a .screen-reader-text {
+	clip: auto;
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 200;
+	height: auto;
+	position: relative !important;
+	/* overrides previous !important styles */
+	width: auto;
+}
+
 /*# sourceMappingURL=../backtobasics/sass/maps/style.css.map */
