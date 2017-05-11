@@ -22,7 +22,8 @@
 
   @media screen and (min-width: $query__medium) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+
   }
 }
 
@@ -35,7 +36,6 @@
 
     span {
       display: block;
-
     }
   }
 }
@@ -44,17 +44,17 @@
 
   ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    color: $color__banner__bottom;
+    text-decoration: none;
   }
 
   a {
     display: block;
     padding: .5em 1em;
-    color: white;
-    text-decoration: none;
     opacity: .6;
 
     &:hover,
@@ -85,6 +85,7 @@
   color: $color__banner__bottom;
   float: left;
   padding: 0 40% 1px 1px;
+  line-height: 1.1em;
 }
 
 .col4a,
@@ -98,7 +99,7 @@
 .col4a,
 .col4b,
 .col4c {
-  margin:0 3.5% 5px 0;
+  margin: 20px;
 }
 
 .col4d {

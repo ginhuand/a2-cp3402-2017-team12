@@ -13,25 +13,16 @@
 
 </div><!-- #content -->
 
-<?php get_sidebar('footer'); ?>
+<div class="clear">
+</div><!--.clear-->
 
-<a href="#" class="scrollup"></a>
-<div class="clear"></div>
 <footer id="footer-main">
 
     <div id="footer-content-wrapper">
-
         <?php get_sidebar( 'footer' ); ?>
-
-        <div class="clear">
-        </div><!-- .clear -->
-
     </div><!-- #footer-content-wrapper -->
 
 </footer><!-- #footer-main -->
-
-</div><!-- #body-content-wrapper -->
-<?php wp_footer(); ?>
 
 <footer id="colophon" class="site-info" role="contentinfo">
     <div class="footer-banner">
@@ -42,10 +33,13 @@
             <?php wp_nav_menu(array('theme_location' => 'footer', 'menu_id' => 'footer-menu')); ?>
         </nav><!-- .footer-->
     </div><!--.footer-banner-->
+</footer><!--.site-info-->
 
-    <footer id="colophon" class="site-footer" role="contentinfo">
+    <footer id="colophon" class="site-footer site-info" role="contentinfo">
+
         <div class="site-footer__wrap">
-            <?php
+            <?php echo (esc_html__('Copyright © Geoff & Vicki Toomby 2017', 'backtobasics'));
+
             //make sure there is a social media menu to display
             if (has_nav_menu('social')) { ?>
                 <nav class="social-menu">
@@ -60,15 +54,8 @@
                     ?>
                 </nav><!--.social-menu-->
             <?php } ?>
-        </div><!--.site-footer__wrap-->
 
-        <div class="site-info footer">
-            <?php echo (esc_html__('Copyright © Geoff & Vicki Toomby 2017', 'backtobasics')); ?>
-        </div><!-- .site-info -->
+        </div><!-- .site-info .site-footer__wrap -->
     </footer><!-- #colophon -->
-    </div><!-- #page -->
 
     <?php wp_footer(); ?>
-
-    </body>
-    </html>

@@ -14,6 +14,7 @@
   line-height: 5px;
 }
 
+
 .site-header {
 	position: relative;
 	padding: 1em;
@@ -77,8 +78,8 @@
     font-family: $font__tagline;
 	font-weight: 100;
     position: absolute;
-    top:45px;
-    left:10px;
+    top:60px;
+    left:20px;
 }
 
 @media screen and (min-width: $query__medium) {
@@ -93,6 +94,32 @@
   .site-navigation {
     width: 55%;
   }
+}
+
+.social-menu__top {
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    display: inline-block;
+    padding: .5em 1em;
+    color: $color__banner__bottom;
+    text-decoration: none;
+    opacity: .6;
+
+    &:hover,
+    &:focus {
+      color: $color__interactive;
+      opacity: 1;
+    }
+  }
+
 }
 
 /* Header and media menu

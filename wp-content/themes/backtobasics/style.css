@@ -414,6 +414,7 @@ hr {
 
 ul, ol {
 	margin: 0 0 1.5em;
+	line-height: 1.5em;
 }
 
 ul {
@@ -1133,8 +1134,8 @@ a:hover, a:active {
 	font-family: "Dancing Script", cursive;
 	font-weight: 100;
 	position: absolute;
-	top: 45px;
-	left: 10px;
+	top: 60px;
+	left: 20px;
 }
 
 @media screen and (min-width: 900px) {
@@ -1915,6 +1916,7 @@ button.dropdown-toggle {
 	color: orange;
 	float: left;
 	padding: 0 40% 1px 1px;
+	line-height: 1.1em;
 }
 
 .col4a,
