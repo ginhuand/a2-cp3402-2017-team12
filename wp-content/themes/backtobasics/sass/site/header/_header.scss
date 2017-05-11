@@ -11,6 +11,7 @@
 .site-banner {
   position: relative;
   background-color: $color__banner;
+  line-height: 5px;
 }
 
 .site-header {
@@ -75,6 +76,9 @@
 	font-size: 1.5em;
     font-family: $font__tagline;
 	font-weight: 100;
+    position: absolute;
+    top:45px;
+    left:10px;
 }
 
 @media screen and (min-width: $query__medium) {
