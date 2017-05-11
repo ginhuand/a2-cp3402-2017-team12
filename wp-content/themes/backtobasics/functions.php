@@ -9,10 +9,10 @@
 
 if ( ! function_exists( 'backtobasics_setup' ) ) :
 /**
- * Sets up theme defaults and registers support for various WordPress features.
+ * Sets up theme defaults and registers support for various WordPress slideshows.
  *
  * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
+ * runs before the init hook. The init hook is too late for some slideshows, such
  * as indicating support for post thumbnails.
  */
 function backtobasics_setup() {
@@ -38,7 +38,7 @@ function backtobasics_setup() {
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *
-	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+	 * @link https://developer.wordpress.org/themes/functionality/slideshowd-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
 
@@ -65,7 +65,7 @@ function backtobasics_setup() {
 		'caption',
 	) );
 
-	// Set up the WordPress core custom background feature.
+	// Set up the WordPress core custom background slideshow.
 	add_theme_support( 'custom-background', apply_filters( 'backtobasics_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
@@ -256,17 +256,52 @@ function backtobasics_widgets_init() {
         'after_title'   => '</h2>',
     ) );
 
-    register_sidebar( array(
-        'name'          => esc_html__( 'Footer Widgets', 'backtobasics' ),
-        'id'            => 'footer-1',
-        'description'   => esc_html__( 'Add footer widgets here.', 'backtobasics' ),
-        'before_widget' => '<section id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</section>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
+    // Register Footer Column #1
+    register_sidebar( array (
+        'name'			 =>  __( 'Footer Column #1', 'backtobasics' ),
+        'id' 			 =>  'footer-column-1-widget-area',
+        'description'	 =>  __( 'The Footer Column #1 widget area', 'backtobasics' ),
+        'before_widget'  =>  '',
+        'after_widget'	 =>  '',
+        'before_title'	 =>  '<h6 class="footer-title widget-title">',
+        'after_title'	 =>  '</h6>',
+    ) );
+
+    // Register Footer Column #2
+    register_sidebar( array (
+        'name'			 =>  __( 'Footer Column #2', 'backtobasics' ),
+        'id' 			 =>  'footer-column-2-widget-area',
+        'description'	 =>  __( 'The Footer Column #2 widget area', 'backtobasics' ),
+        'before_widget'  =>  '',
+        'after_widget'	 =>  '',
+        'before_title'	 =>  '<h6 class="footer-title widget-title">',
+        'after_title'	 =>  '</h6>',
+    ) );
+
+    // Register Footer Column #3
+    register_sidebar( array (
+        'name'			 =>  __( 'Footer Column #3', 'backtobasics' ),
+        'id' 			 =>  'footer-column-3-widget-area',
+        'description'	 =>  __( 'The Footer Column #3 widget area', 'backtobasics' ),
+        'before_widget'  =>  '',
+        'after_widget'	 =>  '',
+        'before_title'	 =>  '<h6 class="footer-title widget-title">',
+        'after_title'	 =>  '</h6>',
+    ) );
+
+    // Register Footer Column #4
+    register_sidebar( array (
+        'name'			 =>  __( 'Footer Column #4', 'backtobasics' ),
+        'id' 			 =>  'footer-column-4-widget-area',
+        'description'	 =>  __( 'The Footer Column #4 widget area', 'backtobasics' ),
+        'before_widget'  =>  '',
+        'after_widget'	 =>  '',
+        'before_title'	 =>  '<h6 class="footer-title widget-title">',
+        'after_title'	 =>  '</h6>',
     ) );
 }
 add_action( 'widgets_init', 'backtobasics_widgets_init' );
+
 
 /**
  * Enqueue scripts and styles.
@@ -282,9 +317,7 @@ function backtobasics_scripts() {
 		'expand' => __( 'Expand child menu', 'backtobasics'),
 		'collapse' => __( 'Collapse child menu', 'backtobasics'),
 	));
-
     wp_enqueue_script( 'backtobasics-functions', get_template_directory_uri() . '/js/functions.js', array('jquery'), '20170429', true );
-
     wp_enqueue_script( 'backtobasics-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -293,8 +326,11 @@ function backtobasics_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'backtobasics_scripts' );
 
+
+
+
 /**
- * Implement the Custom Header feature.
+ * Implement the Custom Header slideshow.
  */
 require get_template_directory() . '/inc/custom-header.php';
 

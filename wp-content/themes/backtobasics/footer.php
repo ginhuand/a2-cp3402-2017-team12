@@ -15,6 +15,24 @@
 
 <?php get_sidebar('footer'); ?>
 
+<a href="#" class="scrollup"></a>
+<div class="clear"></div>
+<footer id="footer-main">
+
+    <div id="footer-content-wrapper">
+
+        <?php get_sidebar( 'footer' ); ?>
+
+        <div class="clear">
+        </div><!-- .clear -->
+
+    </div><!-- #footer-content-wrapper -->
+
+</footer><!-- #footer-main -->
+
+</div><!-- #body-content-wrapper -->
+<?php wp_footer(); ?>
+
 <footer id="colophon" class="site-info" role="contentinfo">
     <div class="footer-banner">
         <nav id="site-navigation" class="main-navigation footer__navigation" role="navigation">
