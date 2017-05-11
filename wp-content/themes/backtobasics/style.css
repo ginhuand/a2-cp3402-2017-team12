@@ -1056,6 +1056,7 @@ a:hover, a:active {
 .site-banner {
 	position: relative;
 	background-color: white;
+	line-height: 5px;
 }
 
 .site-header {
@@ -1131,6 +1132,9 @@ a:hover, a:active {
 	font-size: 1.5em;
 	font-family: "Dancing Script", cursive;
 	font-weight: 100;
+	position: absolute;
+	top: 45px;
+	left: 10px;
 }
 
 @media screen and (min-width: 900px) {
@@ -1888,7 +1892,7 @@ button.dropdown-toggle {
 }
 
 .social-menu a:hover, .social-menu a:focus {
-	color: #1e8cbe;
+	color: royalblue;
 	opacity: 1;
 }
 
@@ -2583,6 +2587,63 @@ object {
 	.centered-image {
 		margin: 0 -2em;
 	}
+}
+
+/*--------------------------------------------------------------
+## Icons
+--------------------------------------------------------------*/
+/* SVG Icons base styles */
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+	position: relative;
+	/* Align more nicely with capital letters */
+	top: -0.0625em;
+	vertical-align: middle;
+}
+
+/*--------------------------------------------------------------
+SVG Fallbacks
+--------------------------------------------------------------*/
+.svg-fallback {
+	display: none;
+}
+
+.no-svg .svg-fallback {
+	display: inline-block;
+}
+
+.no-svg .nav-links .svg-fallback {
+	padding: 0 .5em;
+	color: inherit;
+	background: inherit;
+}
+
+.no-svg .svg-fallback.icon-arrow-left:before {
+	content: "<<";
+}
+
+.no-svg .svg-fallback.icon-arrow-right:before {
+	content: ">>";
+}
+
+/* Social Menu fallbacks */
+.no-svg .social-menu a {
+	height: auto;
+	width: auto;
+}
+
+.no-svg .social-menu li a .screen-reader-text {
+	clip: auto;
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 200;
+	height: auto;
+	position: relative !important;
+	/* overrides previous !important styles */
+	width: auto;
 }
 
 /*# sourceMappingURL=../backtobasics/sass/maps/style.css.map */
