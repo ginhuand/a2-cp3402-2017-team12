@@ -7,7 +7,6 @@
 		width: 100vw;
 	}
 }
-//test of upload
 
 .site-banner {
   position: relative;
@@ -18,8 +17,7 @@
 	position: relative;
 	padding: 1em;
 	font-family: $font__sans;
-	// was: color: #fff;
-	color: #828;
+	color: white;
 	background-color: $color__skin;
 	
 	@media screen and (min-width: $query__small) {
@@ -36,9 +34,14 @@
   margin-right: 1em;
   img {
     display: block;
-    height: 65px;
+    height: 70px;
     width: auto;
   }
+}
+
+.custom-logo {
+  margin: 0;
+  padding: 0;
 }
 
 .site-branding__text {
@@ -54,6 +57,7 @@
 	font-size: 2em;
 	font-weight: 900;
 	line-height: 1em;
+	font-family: $font__sans;
 	
 	a {
 		color: white;
@@ -69,7 +73,7 @@
 .site-description {
 	margin: 0;
 	font-size: 1.5em;
-    font-family: "Dancing Script", cursive;
+    font-family: $font__tagline;
 	font-weight: 100;
 }
 

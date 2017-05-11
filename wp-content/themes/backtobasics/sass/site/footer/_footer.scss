@@ -42,15 +42,15 @@
 
 .social-menu {
 
-  ul{
+  ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
   }
 
-  a{
+  a {
     display: block;
     padding: .5em 1em;
     color: white;
@@ -58,7 +58,7 @@
     opacity: .6;
 
     &:hover,
-    &:focus{
+    &:focus {
       color: #1e8cbe;
       opacity: 1;
     }
@@ -69,4 +69,91 @@
 .footer {
   float: left;
 }
+
+.footer-cols {
+  background-color: lightgray;
+  padding: 10px;
+}
+
+#footer-main {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-title {
+  color: $color__banner__bottom;
+  float: left;
+  padding: 0 40% 1px 1px;
+}
+
+.col4a,
+.col4b,
+.col4c,
+.col4d {
+  width:22%;
+  float:left;
+}
+
+.col4a,
+.col4b,
+.col4c {
+  margin:0 3.5% 5px 0;
+}
+
+.col4d {
+  margin:0 0 5px 0;
+
+  @media screen and (min-width: $query__medium) {
+  /* columns */
+  .col4a,
+  .col4b,
+  .col4c,
+  .col4d {
+    float: left;
+    width: 30%;
+  }
+
+  .col4a,
+  .col4b,
+  .col4c {
+    margin: 0 4% 5px 0;
+  }
+
+  .col4b {
+    margin: 0 0 5px 0;
+  }
+
+  .col4c {
+    clear: both;
+  }
+}
+  @media screen and (min-width: $query__small) {
+    /* columns */
+    .col4a,
+    .col4b,
+    .col4c,
+    .col4d {
+      float: left;
+      width: 10%;
+    }
+
+    .col4a,
+    .col4b,
+    .col4c {
+      margin: 0 2% 5px 0;
+    }
+
+    .col4b {
+      margin: 0 0 5px 0;
+    }
+
+    .col4c {
+      clear: both;
+    }
+  }
+}
+
+
+
 @import "footer-menu";

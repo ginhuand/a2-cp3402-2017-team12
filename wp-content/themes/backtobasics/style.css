@@ -315,6 +315,7 @@ h6 {
 
 p {
 	margin-bottom: 1.5em;
+	font-family: "Montserrat", Georgia, Cambria, "Times New Roman", sans-serif;
 }
 
 dfn, cite, em, i {
@@ -1061,7 +1062,7 @@ a:hover, a:active {
 	position: relative;
 	padding: 1em;
 	font-family: "Wellfleet", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, cursive;
-	color: #828;
+	color: white;
 	background-color: #002254;
 }
 
@@ -1084,8 +1085,13 @@ a:hover, a:active {
 
 .custom-logo-link img {
 	display: block;
-	height: 65px;
+	height: 70px;
 	width: auto;
+}
+
+.custom-logo {
+	margin: 0;
+	padding: 0;
 }
 
 .site-branding__text {
@@ -1108,6 +1114,7 @@ a:hover, a:active {
 	font-size: 2em;
 	font-weight: 900;
 	line-height: 1em;
+	font-family: "Wellfleet", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, cursive;
 }
 
 .site-title a {
@@ -1887,6 +1894,89 @@ button.dropdown-toggle {
 
 .footer {
 	float: left;
+}
+
+.footer-cols {
+	background-color: lightgray;
+	padding: 10px;
+}
+
+#footer-main {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-title {
+	color: orange;
+	float: left;
+	padding: 0 40% 1px 1px;
+}
+
+.col4a,
+.col4b,
+.col4c,
+.col4d {
+	width: 22%;
+	float: left;
+}
+
+.col4a,
+.col4b,
+.col4c {
+	margin: 0 3.5% 5px 0;
+}
+
+.col4d {
+	margin: 0 0 5px 0;
+}
+
+@media screen and (min-width: 900px) {
+	.col4d {
+		/* columns */
+	}
+	.col4d .col4a,
+	.col4d .col4b,
+	.col4d .col4c,
+	.col4d .col4d {
+		float: left;
+		width: 30%;
+	}
+	.col4d .col4a,
+	.col4d .col4b,
+	.col4d .col4c {
+		margin: 0 4% 5px 0;
+	}
+	.col4d .col4b {
+		margin: 0 0 5px 0;
+	}
+	.col4d .col4c {
+		clear: both;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.col4d {
+		/* columns */
+	}
+	.col4d .col4a,
+	.col4d .col4b,
+	.col4d .col4c,
+	.col4d .col4d {
+		float: left;
+		width: 10%;
+	}
+	.col4d .col4a,
+	.col4d .col4b,
+	.col4d .col4c {
+		margin: 0 2% 5px 0;
+	}
+	.col4d .col4b {
+		margin: 0 0 5px 0;
+	}
+	.col4d .col4c {
+		clear: both;
+	}
 }
 
 .footer__navigation {
