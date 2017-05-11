@@ -414,6 +414,7 @@ hr {
 
 ul, ol {
 	margin: 0 0 1.5em;
+	line-height: 1.5em;
 }
 
 ul {
@@ -1056,6 +1057,7 @@ a:hover, a:active {
 .site-banner {
 	position: relative;
 	background-color: white;
+	line-height: 5px;
 }
 
 .site-header {
@@ -1131,6 +1133,9 @@ a:hover, a:active {
 	font-size: 1.5em;
 	font-family: "Dancing Script", cursive;
 	font-weight: 100;
+	position: absolute;
+	top: 60px;
+	left: 20px;
 }
 
 @media screen and (min-width: 900px) {
@@ -1151,6 +1156,31 @@ a:hover, a:active {
 	.site-navigation {
 		width: 55%;
 	}
+}
+
+.social-menu__top ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.social-menu__top a {
+	display: inline-block;
+	padding: .5em 1em;
+	color: orange;
+	text-decoration: none;
+	opacity: .6;
+}
+
+.social-menu__top a:hover, .social-menu__top a:focus {
+	color: royalblue;
+	opacity: 1;
 }
 
 /* Header and media menu
@@ -1845,9 +1875,9 @@ button.dropdown-toggle {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
 	}
 }
 
@@ -1871,24 +1901,24 @@ button.dropdown-toggle {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	color: orange;
+	text-decoration: none;
 }
 
 .social-menu a {
 	display: block;
 	padding: .5em 1em;
-	color: white;
-	text-decoration: none;
 	opacity: .6;
 }
 
 .social-menu a:hover, .social-menu a:focus {
-	color: #1e8cbe;
+	color: royalblue;
 	opacity: 1;
 }
 
@@ -1911,6 +1941,7 @@ button.dropdown-toggle {
 	color: orange;
 	float: left;
 	padding: 0 40% 1px 1px;
+	line-height: 1.1em;
 }
 
 .col4a,
@@ -1924,7 +1955,7 @@ button.dropdown-toggle {
 .col4a,
 .col4b,
 .col4c {
-	margin: 0 3.5% 5px 0;
+	margin: 20px;
 }
 
 .col4d {
