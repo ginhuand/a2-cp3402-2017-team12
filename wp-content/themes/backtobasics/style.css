@@ -1459,34 +1459,6 @@ button.dropdown-toggle {
 }
 
 /*--------------------------------------------------------------
-## Slideshow
---------------------------------------------------------------*/
-/*BLUE SKIN*/
-.camera_blue_skin .camera_prevThumbs div {
-	background-position: -160px -280px;
-}
-
-.camera_blue_skin .camera_nextThumbs div {
-	background-position: -190px -280px;
-}
-
-.camera_blue_skin .camera_prev > span {
-	background-position: 0 -280px;
-}
-
-.camera_blue_skin .camera_next > span {
-	background-position: -40px -280px;
-}
-
-.camera_blue_skin .camera_commands > .camera_play {
-	background-position: -80px -280px;
-}
-
-.camera_blue_skin .camera_commands > .camera_stop {
-	background-position: -120px -280px;
-}
-
-/*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky {
