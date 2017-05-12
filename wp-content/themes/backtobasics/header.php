@@ -23,7 +23,7 @@
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'backtobasics'); ?></a>
 
-    <header id="masthead" class="site-banner site-info" role="banner">
+    <header id="masthead" class="site-banner" role="banner">
         <div class="site-footer__wrap">
             <?php the_custom_logo();
 
@@ -43,7 +43,7 @@
                 <?php
             } ?>
         </div><!--.site-top__wrap-->
-
+    </header>
         <header id="masthead" class="site-header" role="banner">
             <div class="site-branding">
                 <div class="site-branding__text">
@@ -72,6 +72,6 @@
                 <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
             </nav><!-- #site-navigation -->
         </header><!-- #masthead -->
-    </header>
+
 
     <div id="content" class="site-content">

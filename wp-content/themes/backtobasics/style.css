@@ -858,7 +858,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .site-content {
 	padding: 1em;
-	max-width: 1400px;
+	max-width: 1024px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -1057,7 +1057,6 @@ a:hover, a:active {
 .site-banner {
 	position: relative;
 	background-color: white;
-	line-height: 5px;
 }
 
 .site-header {
@@ -1107,7 +1106,7 @@ a:hover, a:active {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	height: 65px;
+	height: 50px;
 }
 
 .site-title {
@@ -1135,7 +1134,6 @@ a:hover, a:active {
 	font-weight: 100;
 	position: absolute;
 	top: 60px;
-	left: 20px;
 }
 
 @media screen and (min-width: 900px) {
@@ -1191,7 +1189,7 @@ a:hover, a:active {
 	font-weight: 400;
 	font-size: 100%;
 	clear: left;
-	padding-top: 30px;
+	margin-top: 40px;
 }
 
 .main-navigation ul {
@@ -1239,12 +1237,12 @@ a:hover, a:active {
 	width: 100%;
 	padding: .5em 1em .5em 0;
 	text-decoration: none;
-	color: #fff;
+	color: white;
 }
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-	color: #1e8cbe;
+	color: royalblue;
 }
 
 .main-navigation .menu-item-has-children,
@@ -1329,11 +1327,6 @@ button.dropdown-toggle {
 		    -ms-flex-pack: end;
 		        justify-content: flex-end;
 		padding-top: 0;
-		/* dropdown opens on hover
-			li:hover > ul,
-			li:focus > ul {
-				display: block;
-			}*/
 	}
 }
 
@@ -1646,10 +1639,10 @@ button.dropdown-toggle {
 	}
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1024px) {
 	.full-bleed {
-		margin-right: calc( ((-100vw + 1400px)/2) - 2em);
-		margin-left: calc( ((-100vw + 1400px)/2) - 2em);
+		margin-right: calc( ((-100vw + 1024px)/2) - 2em);
+		margin-left: calc( ((-100vw + 1024px)/2) - 2em);
 	}
 }
 
@@ -1763,7 +1756,7 @@ button.dropdown-toggle {
 	}
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1024px) {
 	.no-sidebar .children {
 		margin-left: 3em;
 	}
@@ -1866,7 +1859,7 @@ button.dropdown-toggle {
 }
 
 .site-footer__wrap {
-	max-width: 1400px;
+	max-width: 1024px;
 	margin: 0 auto;
 }
 

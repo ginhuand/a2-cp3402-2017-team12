@@ -3,10 +3,10 @@
 	
 	font-family: $font__sans;
 	font-weight: 400;
-	font-size: 100%;
-	clear: left;
-    padding-top: 30px;
-	
+    font-size: 100%;
+    clear: left;
+	margin-top: 40px;
+
 	ul {
 		display: none;
 		list-style: none;
@@ -52,12 +52,12 @@
 		width: 100%;
 		padding: .5em 1em .5em 0;
 		text-decoration: none;
-		color: #fff;
+		color: white;
 	}
 	
 	a:hover,
 	a:focus {
-		color: #1e8cbe;
+		color: $color__interactive;
 	}
 
 	.current_page_item > a,
@@ -155,13 +155,6 @@ button.dropdown-toggle {
 		ul {
 			justify-content: flex-end;
 			padding-top: 0;
-
-			/* dropdown opens on hover
-			li:hover > ul,
-			li:focus > ul {
-				display: block;
-			}*/
-
 		}
 		
 	}
