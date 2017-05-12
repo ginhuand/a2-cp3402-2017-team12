@@ -1859,8 +1859,9 @@ button.dropdown-toggle {
 }
 
 .site-footer__wrap {
-	max-width: 1024px;
+	max-width: 100%;
 	margin: 0 auto;
+	font-size: 20px;
 }
 
 @media screen and (min-width: 900px) {
@@ -1868,9 +1869,9 @@ button.dropdown-toggle {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: end;
-		    -ms-flex-pack: end;
-		        justify-content: flex-end;
+		-webkit-box-pack: left;
+		    -ms-flex-pack: left;
+		        justify-content: left;
 	}
 }
 

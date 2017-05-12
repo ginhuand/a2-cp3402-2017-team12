@@ -13,8 +13,6 @@
 
 </div><!-- #content -->
 
-<div class="clear">
-</div><!--.clear-->
 
 <footer id="footer-main">
 
@@ -36,9 +34,8 @@
 </footer><!--.site-info-->
 
     <footer id="colophon" class="site-footer site-info" role="contentinfo">
-
         <div class="site-footer__wrap">
-            <?php echo (esc_html__('Copyright © Geoff & Vicki Toomby 2017', 'backtobasics'));
+            <?php echo (esc_html__('Team 12 Theme - Back to Basics', 'backtobasics'));
 
             //make sure there is a social media menu to display
             if (has_nav_menu('social')) { ?>
@@ -54,7 +51,6 @@
                     ?>
                 </nav><!--.social-menu-->
             <?php } ?>
-
         </div><!-- .site-info .site-footer__wrap -->
     </footer><!-- #colophon -->
 

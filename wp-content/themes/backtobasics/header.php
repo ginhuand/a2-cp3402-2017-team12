@@ -23,7 +23,7 @@
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'backtobasics'); ?></a>
 
-    <header id="masthead" class="site-banner" role="banner">
+    <header class="site-banner" role="banner">
         <div class="site-footer__wrap">
             <?php the_custom_logo();
 
