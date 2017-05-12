@@ -1,0 +1,390 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: fArt Theme\n"
+"POT-Creation-Date: 2016-03-28 00:09+0200\n"
+"PO-Revision-Date: 2016-03-28 00:09+0200\n"
+"Last-Translator: \n"
+"Language-Team: Tishonator Team <info@tishonator.com>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ../"
+"fart\n"
+
+#: ../search.php:18
+#, php-format
+msgid "You searched for \"%s\". Here are the results:"
+msgstr ""
+
+#: ../searchform.php:19
+msgid "Search..."
+msgstr ""
+
+#: ../sidebar-footer.php:26
+msgid "Footer Col Widget 1"
+msgstr ""
+
+#: ../sidebar-footer.php:33
+msgid ""
+"This is first footer widget area. To customize it, please navigate to Admin "
+"Panel -> Appearance -> Widgets and add widgets to Footer Column #1."
+msgstr ""
+
+#: ../sidebar-footer.php:50
+msgid "Footer Col Widget 2"
+msgstr ""
+
+#: ../sidebar-footer.php:57
+msgid ""
+"This is second footer widget area. To customize it, please navigate to Admin "
+"Panel -> Appearance -> Widgets and add widgets to Footer Column #2."
+msgstr ""
+
+#: ../sidebar-footer.php:74
+msgid "Footer Col Widget 3"
+msgstr ""
+
+#: ../sidebar-footer.php:81
+msgid ""
+"This is third footer widget area. To customize it, please navigate to Admin "
+"Panel -> Appearance -> Widgets and add widgets to Footer Column #3."
+msgstr ""
+
+#: ../content-none.php:17
+msgid "Oh no! Article not found! 404 error!"
+msgstr ""
+
+#: ../content-none.php:21
+msgid "No Results Found!"
+msgstr ""
+
+#: ../content-none.php:26
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../single.php:34
+msgid "Pages:"
+msgstr ""
+
+#: ../footer.php:27
+msgid "fArt Theme"
+msgstr ""
+
+#: ../footer.php:28
+msgid "WordPress"
+msgstr ""
+
+#: ../sidebar-home.php:26
+msgid "Home Col Widget 1"
+msgstr ""
+
+#: ../sidebar-home.php:33
+msgid ""
+"This is first homepage widget area. To customize it, please navigate to "
+"Admin Panel -> Appearance -> Widgets and add widgets to Homepage Column #1."
+msgstr ""
+
+#: ../sidebar-home.php:50
+msgid "Home Col Widget 2"
+msgstr ""
+
+#: ../sidebar-home.php:57
+msgid ""
+"This is second homepage widget area. To customize it, please navigate to "
+"Admin Panel -> Appearance -> Widgets and add widgets to Homepage Column #2."
+msgstr ""
+
+#: ../sidebar-home.php:74
+msgid "Home Col Widget 3"
+msgstr ""
+
+#: ../sidebar-home.php:81
+msgid ""
+"This is third homepage widget area. To customize it, please navigate to "
+"Admin Panel -> Appearance -> Widgets and add widgets to Homepage Column #3."
+msgstr ""
+
+#: ../sidebar-home.php:98
+msgid "Home Col Widget 4"
+msgstr ""
+
+#: ../sidebar-home.php:105
+msgid ""
+"This is fourth homepage widget area. To customize it, please navigate to "
+"Admin Panel -> Appearance -> Widgets and add widgets to Homepage Column #4."
+msgstr ""
+
+#: ../comments.php:53
+#: ../content-page.php:29
+#: ../content.php:69
+msgid "Comments are closed."
+msgstr ""
+
+#: ../content-page.php:29
+#: ../content.php:69
+msgid "No Comments"
+msgstr ""
+
+#: ../content-page.php:29
+#: ../content.php:69
+msgid "1 Comment"
+msgstr ""
+
+#: ../content-page.php:29
+#: ../content.php:69
+msgid "% Comments"
+msgstr ""
+
+#: ../content-page.php:34
+#: ../content.php:74
+msgid "Edit"
+msgstr ""
+
+#: ../content.php:99
+msgid "Categories:"
+msgstr ""
+
+#: ../content.php:108
+msgid "Tags:"
+msgstr ""
+
+#: ../functions.php:51
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:146
+msgid "Questrial font: on or off"
+msgstr ""
+
+#: ../functions.php:163
+msgid "Follow us on Facebook"
+msgstr ""
+
+#: ../functions.php:169
+msgid "Follow us on Google+"
+msgstr ""
+
+#: ../functions.php:175
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: ../functions.php:181
+msgid "Follow us on LinkeIn"
+msgstr ""
+
+#: ../functions.php:187
+msgid "Follow us on Instagram"
+msgstr ""
+
+#: ../functions.php:193
+msgid "Follow our RSS Feeds"
+msgstr ""
+
+#: ../functions.php:199
+msgid "Follow us on Tumblr"
+msgstr ""
+
+#: ../functions.php:205
+msgid "Follow us on Youtube"
+msgstr ""
+
+#: ../functions.php:211
+msgid "Follow us on Pinterest"
+msgstr ""
+
+#: ../functions.php:217
+msgid "Follow us on VK"
+msgstr ""
+
+#: ../functions.php:223
+msgid "Follow us on Flickr"
+msgstr ""
+
+#: ../functions.php:229
+msgid "Follow us on Vine"
+msgstr ""
+
+#: ../functions.php:298
+msgid "Sidebar Widget Area"
+msgstr ""
+
+#: ../functions.php:300
+msgid "The sidebar widget area"
+msgstr ""
+
+#: ../functions.php:311
+msgid "Homepage Column #1"
+msgstr ""
+
+#: ../functions.php:313
+msgid "The Homepage Column #1 widget area"
+msgstr ""
+
+#: ../functions.php:321
+msgid "Homepage Column #2"
+msgstr ""
+
+#: ../functions.php:323
+msgid "The Homepage Column #2 widget area"
+msgstr ""
+
+#: ../functions.php:331
+msgid "Homepage Column #3"
+msgstr ""
+
+#: ../functions.php:333
+msgid "The Homepage Column #3 widget area"
+msgstr ""
+
+#: ../functions.php:341
+msgid "Homepage Column #4"
+msgstr ""
+
+#: ../functions.php:343
+msgid "The Homepage Column #4 widget area"
+msgstr ""
+
+#: ../functions.php:352
+msgid "Footer Column #1"
+msgstr ""
+
+#: ../functions.php:354
+msgid "The Footer Column #1 widget area"
+msgstr ""
+
+#: ../functions.php:363
+msgid "Footer Column #2"
+msgstr ""
+
+#: ../functions.php:365
+msgid "The Footer Column #2 widget area"
+msgstr ""
+
+#: ../functions.php:374
+msgid "Footer Column #3"
+msgstr ""
+
+#: ../functions.php:376
+msgid "The Footer Column #3 widget area"
+msgstr ""
+
+#: ../functions.php:394
+#: ../functions.php:730
+#: ../functions.php:766
+#: ../functions.php:802
+msgid ""
+"<h2>Lorem ipsum dolor</h2><p>Lorem ipsum dolor sit amet, consectetur "
+"adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
+"aliqua.</p><a class=\"btn\" title=\"Read more\" href=\"#\">Read more</a>"
+msgstr ""
+
+#: ../functions.php:427
+msgid "Read More"
+msgstr ""
+
+#: ../functions.php:440
+msgid "Read More..."
+msgstr ""
+
+#: ../functions.php:454
+msgid "Header Logo"
+msgstr ""
+
+#: ../functions.php:469
+msgid "Logo Image"
+msgstr ""
+
+#: ../functions.php:482
+msgid "Social Sites"
+msgstr ""
+
+#: ../functions.php:498
+msgid "Facebook Page URL"
+msgstr ""
+
+#: ../functions.php:517
+msgid "Google+ Page URL"
+msgstr ""
+
+#: ../functions.php:536
+msgid "Twitter Page URL"
+msgstr ""
+
+#: ../functions.php:555
+msgid "LinkedIn Page URL"
+msgstr ""
+
+#: ../functions.php:574
+msgid "instagram Page URL"
+msgstr ""
+
+#: ../functions.php:593
+msgid "RSS Feeds URL"
+msgstr ""
+
+#: ../functions.php:612
+msgid "Tumblr Page URL"
+msgstr ""
+
+#: ../functions.php:631
+msgid "YouTube channel URL"
+msgstr ""
+
+#: ../functions.php:650
+msgid "Pinterest Page URL"
+msgstr ""
+
+#: ../functions.php:669
+msgid "VK Page URL"
+msgstr ""
+
+#: ../functions.php:688
+msgid "Flickr Page URL"
+msgstr ""
+
+#: ../functions.php:707
+msgid "Vine Page URL"
+msgstr ""
+
+#: ../functions.php:721
+msgid "Slider"
+msgstr ""
+
+#: ../functions.php:737
+msgid "slide #1 Content"
+msgstr ""
+
+#: ../functions.php:755
+msgid "slide 1 Image"
+msgstr ""
+
+#: ../functions.php:773
+msgid "slide #2 Content"
+msgstr ""
+
+#: ../functions.php:791
+msgid "slide 2 Image"
+msgstr ""
+
+#: ../functions.php:809
+msgid "slide #3 Content"
+msgstr ""
+
+#: ../functions.php:827
+msgid "slide 3 Image"
+msgstr ""
+
+#: ../functions.php:840
+msgid "Footer"
+msgstr ""
+
+#: ../functions.php:856
+msgid "Copyright Text"
+msgstr ""
