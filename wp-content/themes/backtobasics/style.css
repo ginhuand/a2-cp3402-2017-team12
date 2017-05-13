@@ -1192,7 +1192,6 @@ a:hover, a:active {
 	font-weight: 400;
 	font-size: 100%;
 	clear: left;
-	margin-top: 40px;
 }
 
 .main-navigation ul {
@@ -1969,7 +1968,7 @@ button.dropdown-toggle {
 	.col4d .col4c,
 	.col4d .col4d {
 		float: left;
-		width: 30%;
+		width: 20%;
 	}
 	.col4d .col4a,
 	.col4d .col4b,
