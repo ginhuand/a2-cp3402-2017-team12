@@ -35,7 +35,7 @@
 
     <footer id="colophon" class="site-footer site-info" role="contentinfo">
         <div class="site-footer__wrap">
-            <?php echo (esc_html__('Team 12 Theme - Back to Basics', 'backtobasics'));
+            <?php echo (esc_html__('Back to Basics Theme powered by WordPress', 'backtobasics'));
 
             //make sure there is a social media menu to display
             if (has_nav_menu('social')) { ?>

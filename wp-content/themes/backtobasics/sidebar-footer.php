@@ -10,7 +10,7 @@
  * @author tishonator
  * @since fArt 1.0.0
  */
-?>
+if (is_home()) : ?>
 <div class="footer-cols">
 
     <div id="footer-cols-inner">
@@ -106,3 +106,4 @@
     </div><!-- #footer-cols-inner -->
 
 </div><!-- #footer-cols -->
+<?php endif; ?>
