@@ -51,6 +51,7 @@ html {
 }
 
 body {
+	max-width: 99%;
 	margin: 0 auto !important;
 	float: none !important;
 }
@@ -398,8 +399,9 @@ html {
 }
 
 body {
-	background: #fff;
+	background: #666;
 	/* Fallback for when there is no custom background color defined. */
+	background: url("images/woodpanel_background.jpg");
 }
 
 blockquote, q {
@@ -458,7 +460,7 @@ table {
 	width: 100%;
 }
 
-thread th {
+thead th {
 	border-bottom: 2px solid #bbb;
 	padding-bottom: .5em;
 }
@@ -894,11 +896,11 @@ a:hover, a:active {
 	}
 	.single.has-sidebar .hentry .post-content,
 	.page .hentry .post-content {
-		width: 65%;
+		width: 70%;
 	}
 	.single.has-sidebar .hentry .widget-area,
 	.page .hentry .widget-area {
-		width: 30%;
+		width: 28%;
 	}
 	.page.has-page-sidebar .hentry {
 		-webkit-box-orient: horizontal;
@@ -965,10 +967,10 @@ a:hover, a:active {
 		        flex: 1 0 100%;
 	}
 	.archive-view.has-sidebar .content-area {
-		width: 65%;
+		width: 70%;
 	}
 	.archive-view.has-sidebar .widget-area {
-		width: 30%;
+		width: 28%;
 		background-color: lightgray;
 		padding: 1em 1em 2em;
 		height: 100%;
@@ -1863,6 +1865,7 @@ button.dropdown-toggle {
 	max-width: 100%;
 	margin: 0 auto;
 	font-size: 20px;
+	height: 50px;
 }
 
 @media screen and (min-width: 900px) {

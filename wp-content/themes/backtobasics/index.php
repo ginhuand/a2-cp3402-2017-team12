@@ -14,6 +14,7 @@
 
 get_header(); ?>
 
+
 <?php if (have_posts()) : ?>
 
                 <div id="primary" class="content-area">

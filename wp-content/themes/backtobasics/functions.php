@@ -65,13 +65,17 @@ function backtobasics_setup() {
 		'caption',
 	) );
 
-	// Set up the WordPress core custom background slideshow.
-	add_theme_support( 'custom-background', apply_filters( 'backtobasics_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
-	
-	// Add theme support for Custom Logo
+
+    /*
+     * Set up the WordPress core custom background
+     */
+    $args = array(
+        'default-color' => '000000',
+        'default-image' => 'images/woodpanel_background.jpg',
+    );
+    add_theme_support( 'custom-background', $args );
+
+    // Add theme support for Custom Logo
 	add_theme_support( 'custom-logo', array(
 		'width' => 96,
 		'height' => 96,
@@ -325,8 +329,6 @@ function backtobasics_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'backtobasics_scripts' );
-
-
 
 
 /**
