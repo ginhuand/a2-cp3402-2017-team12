@@ -47,7 +47,7 @@ function backtobasics_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Header', 'backtobasics' ),
+		'header' => esc_html__( 'Header', 'backtobasics' ),
         'top' => esc_html__( 'Top Nav Menu', 'backtobasics' ),
         'social' => esc_html__( 'Social Media Menu', 'backtobasics' ),
         'footer' => esc_html__( 'Footer', 'backtobasics' ),

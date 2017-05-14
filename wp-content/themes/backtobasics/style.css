@@ -1257,72 +1257,6 @@ a:hover, a:active {
 	padding-right: 2em;
 }
 
-button.dropdown-toggle {
-	position: absolute;
-	right: 0;
-	border: none;
-	background: inherit;
-	color: white;
-	line-height: 1.5em;
-	padding: .4em 1em .4em .5em;
-}
-
-.menu-toggle {
-	position: absolute;
-	top: 0;
-	right: 0;
-	display: block;
-	margin: 1.2em 1.2em 0 0;
-	padding: .6em .8em;
-	font-size: 50%;
-	text-transform: uppercase;
-	color: white;
-	border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-/* Toggle small menu and sub-menus on */
-.toggled-on ul,
-.sub-menu.toggled-on {
-	display: block;
-}
-
-@media screen and (min-width: 600px) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation .menu-item-has-children > a,
-	.main-navigation .page_item_has_children > a {
-		padding-right: 2em;
-		background: rgba(255, 255, 255, 0.1);
-	}
-	.main-navigation ul {
-		display: block;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-wrap: wrap;
-		    flex-wrap: wrap;
-	}
-	.main-navigation ul ul {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-		background: rgba(255, 255, 255, 0.1);
-		margin-left: 0;
-	}
-	.main-navigation ul ul li {
-		padding-left: 0;
-	}
-	.main-navigation ul ul li a {
-		width: 218px;
-		background: none;
-	}
-	.main-navigation ul li a {
-		padding: .4em 1em;
-	}
-}
-
 @media screen and (min-width: 900px) {
 	.main-navigation ul {
 		-webkit-box-pack: end;
@@ -1428,8 +1362,9 @@ button.dropdown-toggle {
 }
 
 /* Toggle small menu and sub-menus on */
-.toggled-on ul,
-.sub-menu.toggled-on {
+#media-menu .toggled-on ul,
+#media-menu .sub-menu.toggled-on,
+#media-menu .children.toggled-on {
 	display: block;
 }
 
@@ -2079,6 +2014,18 @@ button.dropdown-toggle {
 	padding-right: 2em;
 }
 
+@media screen and (min-width: 900px) {
+	.footer__navigation ul {
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+		padding-top: 0;
+	}
+}
+
+/*--------------------------------------------------------------
+## Header and footer common
+---------------------------------------------------------------*/
 button.dropdown-toggle {
 	position: absolute;
 	right: 0;
@@ -2104,7 +2051,8 @@ button.dropdown-toggle {
 
 /* Toggle small menu and sub-menus on */
 .toggled-on ul,
-.sub-menu.toggled-on {
+.sub-menu.toggled-on,
+.children.toggled-on {
 	display: block;
 }
 
@@ -2112,12 +2060,12 @@ button.dropdown-toggle {
 	.menu-toggle {
 		display: none;
 	}
-	.footer__navigation .menu-item-has-children > a,
-	.footer__navigation .page_item_has_children > a {
+	.main-navigation .menu-item-has-children > a,
+	.main-navigation .page_item_has_children > a {
 		padding-right: 2em;
 		background: rgba(255, 255, 255, 0.1);
 	}
-	.footer__navigation ul {
+	.main-navigation ul {
 		display: block;
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -2125,7 +2073,7 @@ button.dropdown-toggle {
 		-ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
 	}
-	.footer__navigation ul ul {
+	.main-navigation ul ul {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
@@ -2133,24 +2081,15 @@ button.dropdown-toggle {
 		background: rgba(255, 255, 255, 0.1);
 		margin-left: 0;
 	}
-	.footer__navigation ul ul li {
+	.main-navigation ul ul li {
 		padding-left: 0;
 	}
-	.footer__navigation ul ul li a {
+	.main-navigation ul ul li a {
 		width: 218px;
 		background: none;
 	}
-	.footer__navigation ul li a {
+	.main-navigation ul li a {
 		padding: .4em 1em;
-	}
-}
-
-@media screen and (min-width: 900px) {
-	.footer__navigation ul {
-		-webkit-box-pack: end;
-		    -ms-flex-pack: end;
-		        justify-content: flex-end;
-		padding-top: 0;
 	}
 }
 
