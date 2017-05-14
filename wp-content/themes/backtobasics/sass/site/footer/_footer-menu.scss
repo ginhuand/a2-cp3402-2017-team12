@@ -1,4 +1,4 @@
-.footer__navigation {
+.footer_navigation {
   display: block;
 
   font-family: $font__sans;
@@ -77,7 +77,7 @@
 }
 
 @media screen and (min-width: $query__medium) {
-  .footer__navigation {
+  .footer_navigation {
 
     ul {
       justify-content: flex-end;
