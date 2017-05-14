@@ -1,4 +1,4 @@
-.footer__navigation {
+.footer_navigation {
   display: block;
 
   font-family: $font__sans;
@@ -76,81 +76,8 @@
   }
 }
 
-button.dropdown-toggle {
-  position: absolute;
-  right: 0;
-  border: none;
-  background: inherit;
-  color: white;
-  line-height: 1.5em;
-  padding: .4em 1em .4em .5em;
-}
-
-.menu-toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  margin: 1.2em 1.2em 0 0;
-  padding: .6em .8em;
-  font-size: 50%;
-  text-transform: uppercase;
-  color: white;
-  border: 1px solid hsla(0, 0%, 100%, .3);
-}
-
-/* Toggle small menu and sub-menus on */
-.toggled-on ul,
-.sub-menu.toggled-on {
-  display: block;
-}
-
-@media screen and (min-width: $query__small) {
-  .menu-toggle {
-    display: none;
-  }
-
-  .footer__navigation {
-
-    .menu-item-has-children > a,
-    .page_item_has_children > a {
-      padding-right: 2em;
-      background: hsla(0, 0%, 100%, .1);
-    }
-
-    ul {
-      display: block;
-      display: flex;
-      flex-wrap: wrap;
-
-      ul {
-        flex-direction: column;
-        background: hsla(0, 0%, 100%, .1);
-        margin-left: 0;
-
-        li {
-          padding-left: 0;
-
-          a {
-            width: 218px;
-            background: none;
-          }
-        }
-      }
-
-      li {
-
-        a {
-          padding: .4em 1em;
-        }
-      }
-    }
-
-  }
-}
-
 @media screen and (min-width: $query__medium) {
-  .footer__navigation {
+  .footer_navigation {
 
     ul {
       justify-content: flex-end;

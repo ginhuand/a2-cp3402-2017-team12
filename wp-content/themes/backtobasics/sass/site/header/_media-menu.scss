@@ -100,8 +100,9 @@ button.dropdown-toggle {
 }
 
 /* Toggle small menu and sub-menus on */
-.toggled-on ul,
-.sub-menu.toggled-on {
+#media-menu .toggled-on ul,
+#media-menu .sub-menu.toggled-on,
+#media-menu .children.toggled-on {
   display: block;
 }
 
