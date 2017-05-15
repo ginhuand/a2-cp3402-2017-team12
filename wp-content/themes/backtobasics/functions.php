@@ -71,7 +71,7 @@ if (!function_exists('backtobasics_setup')) :
          */
         add_theme_support('custom-background', array(
             'default-color' => 'e3e3e3',
-            'default-image' => '%1$s/images/background.jpg',
+            'default-image' => '/images/woodpanel_background.jpg',
             'default-repeat' => '',
             'default-position-x' => '',
             'default-attachment'     => '',
