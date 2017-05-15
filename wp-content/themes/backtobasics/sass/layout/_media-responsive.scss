@@ -1,0 +1,162 @@
+@media (min-width: 1200px) {
+  .backtobasics_gallery_page .col-md-3 {
+    width: 25%;
+  }
+
+  .carousel-caption {
+    top: 25%;
+  }
+  .boxed .carousel-caption {
+    top: 20%;
+  }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
+
+  .backtobasics_gallery_page .col-md-3 {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+  .carousel-caption {
+    top: 40px;
+  }
+  .carousel-text h1 {
+    font-size: 1.4em;
+    padding: 10px;
+  }
+  .carousel-list li {
+    color: #fff;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    overflow: hidden;
+    font-family: $font__sans;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .carousel-list {
+    top: 60px;
+    margin: 0 auto;
+  }
+  .backtobasics_project_section .caroufredsel_wrapper {
+    height: 350px !important;
+  }
+  .backtobasics_client_area .caroufredsel_wrapper {
+    height: 250px !important;
+  }
+  .backtobasics_project_detail_related_projet .caroufredsel_wrapper {
+    height: 350px !important;
+  }
+
+  .carousel-caption {
+    top: 20%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  .carousel-caption {
+    top: 15px;
+  }
+  .carousel-text h1 {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  .carousel-list li {
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    font-family: $font__serif;
+    text-transform: uppercase;
+  }
+  .carousel-list {
+    top: 60px;
+    margin: 0px auto;
+  }
+  .carousel-caption {
+    top: 20%;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+
+  /*.carousel-list li {	display:none; } */
+  .carousel-text h1 {
+    margin: 0 0 0px 0;
+    padding: 5px;
+    font-size: 7px;
+    font-family: $font__sans;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    line-height: 8px;
+  }
+  .carousel-text .backtobasics_blog_read_btn {
+    font-size: 7px;
+    display: inline-block;
+    padding: 3px;;
+  }
+
+  .carousel-list li {
+    overflow: hidden;
+    padding: 5px;
+    line-height: 8px;
+    display: block;
+    color: #fff;
+    font-size: 8px;
+    margin-bottom: 5px;
+    font-family: $font__serif;
+    text-transform: uppercase;
+  }
+
+  .carousel-caption {
+    top: 20%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  .backtobasics_project_section .caroufredsel_wrapper {
+    height: 450px !important;
+  }
+  .backtobasics_client_area .caroufredsel_wrapper {
+    height: 300px !important;
+  }
+  .backtobasics_project_detail_related_projet .caroufredsel_wrapper {
+    height: 450px !important;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+  .carousel-text h1 {
+    margin-top: -10px;
+    font-size: 0.8em;
+  }
+  /* .carousel-list li {	display:none;	} */
+  .carousel-list li {
+    color: #fff;
+    font-size: 8px;
+    line-height: 8px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    font-family: $font__serif;
+    text-transform: uppercase;
+  }
+
+  .carousel-caption {
+    top: 30%;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+
+  .backtobasics_client_area .caroufredsel_wrapper {
+    height: 300px !important;
+  }
+}
