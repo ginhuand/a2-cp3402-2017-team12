@@ -9,8 +9,8 @@ html {
 }
 
 body {
-	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
-    background: url("images/woodpanel_background.jpg");
+	//background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	background: url("images/woodpanel_background.jpg");
 }
 
 blockquote, q {

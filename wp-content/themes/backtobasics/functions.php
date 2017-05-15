@@ -66,15 +66,19 @@ if (!function_exists('backtobasics_setup')) :
             'caption',
         ));
 
-
         /*
          * Set up the WordPress core custom background
          */
-        $args = array(
-            'default-color' => '000000',
-            'default-image' => 'images/woodpanel_background.jpg',
-        );
-        add_theme_support('custom-background', $args);
+        add_theme_support('custom-background', array(
+            'default-color' => 'e3e3e3',
+            'default-image' => '%1$s/images/background.jpg',
+            'default-repeat' => '',
+            'default-position-x' => '',
+            'default-attachment'     => '',
+            'wp-head-callback'       => '_custom_background_cb',
+            'admin-head-callback'    => '',
+            'admin-preview-callback' => '',
+        ));
 
         // Add theme support for Custom Logo
         add_theme_support('custom-logo', array(
@@ -340,7 +344,7 @@ function backtobasics_scripts()
     wp_enqueue_script('backtobasics-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true);
     wp_enqueue_script('backtobasics-theme-script', get_template_directory_uri() . '/js/backtobasics_theme_script.js');
     wp_enqueue_script('backtobasics-footer-script', get_template_directory_uri() . '/js/backtobasics-footer-script.js', '', '', true);
-    wp_enqueue_script('bootstrap-js', get_template_directory_uri() .'/js/bootstrap.js');
+    wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.js');
 
     /*Carofredsul Slides*/
     wp_enqueue_script('jquery.carouFredSel', get_template_directory_uri() . '/js/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1.js');

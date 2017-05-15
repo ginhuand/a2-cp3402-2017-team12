@@ -417,8 +417,6 @@ html {
 }
 
 body {
-	background: #666;
-	/* Fallback for when there is no custom background color defined. */
 	background: url("images/woodpanel_background.jpg");
 }
 
