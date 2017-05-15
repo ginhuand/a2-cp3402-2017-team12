@@ -1,0 +1,107 @@
+/*
+* Flex Slider css
+*/
+.carousel{
+  margin-bottom:40px;
+}
+
+.carousel-inner img{
+  width:100%;
+}
+.carousel-caption{
+  top:25%;
+}
+.carousel-control .fa .fa-chevron-left{
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+
+.carousel-text h1 {
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 1.5em;
+  font-family: $font__sans;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  line-height: 1.4em;
+  background:rgba(0,0,0,0.6);
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -o-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+.carousel-text .backtobasics_blog_read_btn{
+  font-size: 16px;
+  color:#fff;
+  display:inline-block;
+  transition: all 0.4s ease 0s;
+  padding:10px;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  margin-bottom:20px;
+  box-shadow:0 !important;
+}
+
+.carousel-list li {
+  background: rgba(49, 162, 221, 0.8);
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  font-weight: 400;
+  font-family: $font__serif;
+  padding: 10px;
+  line-height: 23px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-list li:nth-child(1) {
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -ms-animation-delay: .3s;
+  -o-animation-delay: .3s;
+  animation-delay: .3s;
+}
+.carousel-list li:nth-child(2) {
+  -webkit-animation-delay: .5s;
+  -moz-animation-delay: .5s;
+  -ms-animation-delay: .5s;
+  -o-animation-delay: .5s;
+  animation-delay: .5s;
+}
+
+.carousel-list li:nth-child(3) {
+  -webkit-animation-delay: .7s;
+  -moz-animation-delay: .7s;
+  -ms-animation-delay: .7s;
+  -o-animation-delay: .7s;
+  animation-delay: .7s;
+}
+
+.backtobasics_slider_shadow{
+  background-image: url('../images/shadow.png') no-repeat top center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 99;
+  width:100%;
+  background-size: 100%;
+  bottom: -60px;
+}
+
+.carousel-indicators li{
+  width:19px;
+  height:19px;
+}
+
+.carousel-indicators .active{
+  width:19px;
+  height:19px;
+}

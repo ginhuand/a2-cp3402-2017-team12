@@ -15,6 +15,7 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <?php wp_head(); ?>
 </head>
@@ -43,7 +44,7 @@
                 <?php
             } ?>
         </div><!--.site-top__wrap-->
-    </header>
+        </header>
         <header id="masthead" class="site-header" role="banner">
             <div class="site-branding">
                 <div class="site-branding__text">
@@ -56,6 +57,8 @@
                                                  rel="home"><?php bloginfo('name'); ?></a></p>
                         <?php
                     endif;
+
+                    $wl_theme_options = backtobasics_get_options();
 
                     $description = get_bloginfo('description', 'display');
                     if ($description || is_customize_preview()) : ?>
