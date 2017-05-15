@@ -7,126 +7,128 @@
  * @package backtobasics
  */
 
-if ( ! function_exists( 'backtobasics_setup' ) ) :
-/**
- * Sets up theme defaults and registers support for various WordPress slideshows.
- *
- * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some slideshows, such
- * as indicating support for post thumbnails.
- */
-function backtobasics_setup() {
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on backtobasics, use a find and replace
-	 * to change 'backtobasics' to the name of your theme in all the template files.
-	 */
-	load_theme_textdomain( 'backtobasics', get_template_directory() . '/languages' );
-
-	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
-
-	/*
-	 * Let WordPress manage the document title.
-	 * By adding theme support, we declare that this theme does not use a
-	 * hard-coded <title> tag in the document head, and expect WordPress to
-	 * provide it for us.
-	 */
-	add_theme_support( 'title-tag' );
-
-	/*
-	 * Enable support for Post Thumbnails on posts and pages.
-	 *
-	 * @link https://developer.wordpress.org/themes/functionality/slideshowd-images-post-thumbnails/
-	 */
-	add_theme_support( 'post-thumbnails' );
-
-	add_image_size( 'backtobasics-full-bleed', 2000, 1200, true);
-	add_image_size( 'backtobasics-index-image', 1000, 550, true);
-
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'header' => esc_html__( 'Header', 'backtobasics' ),
-        'top' => esc_html__( 'Top Nav Menu', 'backtobasics' ),
-        'social' => esc_html__( 'Social Media Menu', 'backtobasics' ),
-        'footer' => esc_html__( 'Footer', 'backtobasics' ),
-    ) );
-
-	/*
-	 * Switch default core markup for search form, comment form, and comments
-	 * to output valid HTML5.
-	 */
-	add_theme_support( 'html5', array(
-		'search-form',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
-	) );
-
-
-    /*
-     * Set up the WordPress core custom background
+if (!function_exists('backtobasics_setup')) :
+    /**
+     * Sets up theme defaults and registers support for various WordPress slideshows.
+     *
+     * Note that this function is hooked into the after_setup_theme hook, which
+     * runs before the init hook. The init hook is too late for some slideshows, such
+     * as indicating support for post thumbnails.
      */
-    $args = array(
-        'default-color' => '000000',
-        'default-image' => 'images/woodpanel_background.jpg',
-    );
-    add_theme_support( 'custom-background', $args );
+    function backtobasics_setup()
+    {
+        /*
+         * Make theme available for translation.
+         * Translations can be filed in the /languages/ directory.
+         * If you're building a theme based on backtobasics, use a find and replace
+         * to change 'backtobasics' to the name of your theme in all the template files.
+         */
+        load_theme_textdomain('backtobasics', get_template_directory() . '/languages');
 
-    // Add theme support for Custom Logo
-	add_theme_support( 'custom-logo', array(
-		'width' => 96,
-		'height' => 96,
-		'flex-width' => true,
-	));
-	
-}
+        // Add default posts and comments RSS feed links to head.
+        add_theme_support('automatic-feed-links');
+
+        /*
+         * Let WordPress manage the document title.
+         * By adding theme support, we declare that this theme does not use a
+         * hard-coded <title> tag in the document head, and expect WordPress to
+         * provide it for us.
+         */
+        add_theme_support('title-tag');
+
+        /*
+         * Enable support for Post Thumbnails on posts and pages.
+         *
+         * @link https://developer.wordpress.org/themes/functionality/slideshowd-images-post-thumbnails/
+         */
+        add_theme_support('post-thumbnails');
+
+        add_image_size('backtobasics-full-bleed', 2000, 1200, true);
+        add_image_size('backtobasics-index-image', 1000, 550, true);
+
+        // This theme uses wp_nav_menu() in one location.
+        register_nav_menus(array(
+            'header' => esc_html__('Header', 'backtobasics'),
+            'top' => esc_html__('Top Nav Menu', 'backtobasics'),
+            'social' => esc_html__('Social Media Menu', 'backtobasics'),
+            'footer' => esc_html__('Footer', 'backtobasics'),
+        ));
+
+        /*
+         * Switch default core markup for search form, comment form, and comments
+         * to output valid HTML5.
+         */
+        add_theme_support('html5', array(
+            'search-form',
+            'comment-form',
+            'comment-list',
+            'gallery',
+            'caption',
+        ));
+
+
+        /*
+         * Set up the WordPress core custom background
+         */
+        $args = array(
+            'default-color' => '000000',
+            'default-image' => 'images/woodpanel_background.jpg',
+        );
+        add_theme_support('custom-background', $args);
+
+        // Add theme support for Custom Logo
+        add_theme_support('custom-logo', array(
+            'width' => 96,
+            'height' => 96,
+            'flex-width' => true,
+        ));
+
+    }
 endif;
-add_action( 'after_setup_theme', 'backtobasics_setup' );
+add_action('after_setup_theme', 'backtobasics_setup');
 
 
 /**
  * Register custom fonts.
  */
-function backtobasics_fonts_url() {
-	$fonts_url = '';
+function backtobasics_fonts_url()
+{
+    $fonts_url = '';
 
-	/**
-	 * Translators: If there are characters in your language that are not
-	 * supported by Wellfleet, Montserrat and Dancing Script, translate this to 'off'. Do not translate
-	 * into your own language.
-	 */
-	$wellfleet = _x( 'on', 'Wellfleet font: on or off', 'backtobasics' );
-	$montserrat = _x( 'on', 'Montserrat font: on or off', 'backtobasics' );
-	$dancingScript = _x( 'on', 'Dancing Script font: on or off', 'backtobasics' );
+    /**
+     * Translators: If there are characters in your language that are not
+     * supported by Wellfleet, Montserrat and Dancing Script, translate this to 'off'. Do not translate
+     * into your own language.
+     */
+    $wellfleet = _x('on', 'Wellfleet font: on or off', 'backtobasics');
+    $montserrat = _x('on', 'Montserrat font: on or off', 'backtobasics');
+    $dancingScript = _x('on', 'Dancing Script font: on or off', 'backtobasics');
 
-	$font_families = array();
-	
-	if ( 'off' !== $wellfleet ) {
-		$font_families[] = 'Wellfleet';
-	}
-	
-	if ( 'off' !== $montserrat ) {
+    $font_families = array();
+
+    if ('off' !== $wellfleet) {
+        $font_families[] = 'Wellfleet';
+    }
+
+    if ('off' !== $montserrat) {
         $font_families[] = 'Montserrat:300,400,400i,700';
     }
 
-    if ( 'off' !== $dancingScript ) {
+    if ('off' !== $dancingScript) {
         $font_families[] = 'Dancing Script';
     }
 
-	if ( in_array( 'on', array($wellfleet, $montserrat, $dancingScript) ) ) {
+    if (in_array('on', array($wellfleet, $montserrat, $dancingScript))) {
 
-		$query_args = array(
-			'family' => urlencode( implode( '|', $font_families ) ),
-			'subset' => urlencode( 'latin,latin-ext' ),
-		);
+        $query_args = array(
+            'family' => urlencode(implode('|', $font_families)),
+            'subset' => urlencode('latin,latin-ext'),
+        );
 
-		$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
-	}
+        $fonts_url = add_query_arg($query_args, 'https://fonts.googleapis.com/css');
+    }
 
-	return esc_url_raw( $fonts_url );
+    return esc_url_raw($fonts_url);
 }
 
 /**
@@ -134,21 +136,23 @@ function backtobasics_fonts_url() {
  *
  * @since Twenty Seventeen 1.0
  *
- * @param array  $urls           URLs to print for resource hints.
- * @param string $relation_type  The relation type the URLs are printed.
+ * @param array $urls URLs to print for resource hints.
+ * @param string $relation_type The relation type the URLs are printed.
  * @return array $urls           URLs to print for resource hints.
  */
-function backtobasics_resource_hints( $urls, $relation_type ) {
-	if ( wp_style_is( 'backtobasics-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
-		$urls[] = array(
-			'href' => 'https://fonts.gstatic.com',
-			'crossorigin',
-		);
-	}
+function backtobasics_resource_hints($urls, $relation_type)
+{
+    if (wp_style_is('backtobasics-fonts', 'queue') && 'preconnect' === $relation_type) {
+        $urls[] = array(
+            'href' => 'https://fonts.gstatic.com',
+            'crossorigin',
+        );
+    }
 
-	return $urls;
+    return $urls;
 }
-add_filter( 'wp_resource_hints', 'backtobasics_resource_hints', 10, 2 );
+
+add_filter('wp_resource_hints', 'backtobasics_resource_hints', 10, 2);
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -157,10 +161,12 @@ add_filter( 'wp_resource_hints', 'backtobasics_resource_hints', 10, 2 );
  *
  * @global int $content_width
  */
-function backtobasics_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'backtobasics_content_width', 640 );
+function backtobasics_content_width()
+{
+    $GLOBALS['content_width'] = apply_filters('backtobasics_content_width', 640);
 }
-add_action( 'after_setup_theme', 'backtobasics_content_width', 0 );
+
+add_action('after_setup_theme', 'backtobasics_content_width', 0);
 
 /**
  * Add custom image sizes attribute to enhance responsive image functionality
@@ -169,42 +175,46 @@ add_action( 'after_setup_theme', 'backtobasics_content_width', 0 );
  * @origin Twenty Seventeen 1.0
  *
  * @param string $sizes A source size value for use in a 'sizes' attribute.
- * @param array  $size  Image size. Accepts an array of width and height
+ * @param array $size Image size. Accepts an array of width and height
  *                      values in pixels (in that order).
  * @return string A source size value for use in a content image 'sizes' attribute.
  */
-function backtobasics_content_image_sizes_attr( $sizes, $size ) {
+function backtobasics_content_image_sizes_attr($sizes, $size)
+{
     $width = $size[0];
 
-    if ( 900 <= $width ) {
+    if (900 <= $width) {
         $sizes = '(min-width: 900px) 700px, 900px';
     }
 
-    if ( is_active_sidebar( 'sidebar-1' ) || is_active_sidebar( 'sidebar-2' ) ) {
+    if (is_active_sidebar('sidebar-1') || is_active_sidebar('sidebar-2')) {
         $sizes = '(min-width: 900px) 600px, 900px';
     }
 
     return $sizes;
 }
-add_filter( 'wp_calculate_image_sizes', 'backtobasics_content_image_sizes_attr', 10, 2 );
+
+add_filter('wp_calculate_image_sizes', 'backtobasics_content_image_sizes_attr', 10, 2);
 
 /**
  * Filter the `sizes` value in the header image markup.
  *
  * @origin Twenty Seventeen 1.0
  *
- * @param string $html   The HTML image tag markup being filtered.
+ * @param string $html The HTML image tag markup being filtered.
  * @param object $header The custom header object returned by 'get_custom_header()'.
- * @param array  $attr   Array of the attributes for the image tag.
+ * @param array $attr Array of the attributes for the image tag.
  * @return string The filtered header image HTML.
  */
-function backtobasics_header_image_tag( $html, $header, $attr ) {
-    if ( isset( $attr['sizes'] ) ) {
-        $html = str_replace( $attr['sizes'], '100vw', $html );
+function backtobasics_header_image_tag($html, $header, $attr)
+{
+    if (isset($attr['sizes'])) {
+        $html = str_replace($attr['sizes'], '100vw', $html);
     }
     return $html;
 }
-add_filter( 'get_header_image_tag', 'backtobasics_header_image_tag', 10, 3 );
+
+add_filter('get_header_image_tag', 'backtobasics_header_image_tag', 10, 3);
 
 /**
  * Add custom image sizes attribute to enhance responsive image functionality
@@ -212,15 +222,16 @@ add_filter( 'get_header_image_tag', 'backtobasics_header_image_tag', 10, 3 );
  *
  * @origin Twenty Seventeen 1.0
  *
- * @param array $attr       Attributes for the image markup.
- * @param int   $attachment Image attachment ID.
- * @param array $size       Registered image size or flat array of height and width dimensions.
+ * @param array $attr Attributes for the image markup.
+ * @param int $attachment Image attachment ID.
+ * @param array $size Registered image size or flat array of height and width dimensions.
  * @return string A source size value for use in a post thumbnail 'sizes' attribute.
  */
-function backtobasics_post_thumbnail_sizes_attr( $attr, $attachment, $size ) {
+function backtobasics_post_thumbnail_sizes_attr($attr, $attachment, $size)
+{
 
-    if ( !is_singular() ) {
-        if ( is_active_sidebar( 'sidebar-1' ) ) {
+    if (!is_singular()) {
+        if (is_active_sidebar('sidebar-1')) {
             $attr['sizes'] = '(max-width: 900px) 90vw, 800px';
         } else {
             $attr['sizes'] = '(max-width: 1000px) 90vw, 1000px';
@@ -231,7 +242,8 @@ function backtobasics_post_thumbnail_sizes_attr( $attr, $attachment, $size ) {
 
     return $attr;
 }
-add_filter( 'wp_get_attachment_image_attributes', 'backtobasics_post_thumbnail_sizes_attr', 10, 3 );
+
+add_filter('wp_get_attachment_image_attributes', 'backtobasics_post_thumbnail_sizes_attr', 10, 3);
 
 
 /**
@@ -239,97 +251,175 @@ add_filter( 'wp_get_attachment_image_attributes', 'backtobasics_post_thumbnail_s
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function backtobasics_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'backtobasics' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'backtobasics' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-
-    register_sidebar( array(
-        'name'          => esc_html__( 'Page Sidebar', 'backtobasics' ),
-        'id'            => 'sidebar-2',
-        'description'   => esc_html__( 'Add page sidebar widgets here.', 'backtobasics' ),
+function backtobasics_widgets_init()
+{
+    register_sidebar(array(
+        'name' => esc_html__('Sidebar', 'backtobasics'),
+        'id' => 'sidebar-1',
+        'description' => esc_html__('Add widgets here.', 'backtobasics'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</section>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
-    ) );
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+
+    register_sidebar(array(
+        'name' => esc_html__('Page Sidebar', 'backtobasics'),
+        'id' => 'sidebar-2',
+        'description' => esc_html__('Add page sidebar widgets here.', 'backtobasics'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
 
     // Register Footer Column #1
-    register_sidebar( array (
-        'name'			 =>  __( 'Footer Column #1', 'backtobasics' ),
-        'id' 			 =>  'footer-column-1-widget-area',
-        'description'	 =>  __( 'The Footer Column #1 widget area', 'backtobasics' ),
-        'before_widget'  =>  '',
-        'after_widget'	 =>  '',
-        'before_title'	 =>  '<h6 class="footer-title widget-title">',
-        'after_title'	 =>  '</h6>',
-    ) );
+    register_sidebar(array(
+        'name' => __('Footer Column #1', 'backtobasics'),
+        'id' => 'footer-column-1-widget-area',
+        'description' => __('The Footer Column #1 widget area', 'backtobasics'),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h6 class="footer-title widget-title">',
+        'after_title' => '</h6>',
+    ));
 
     // Register Footer Column #2
-    register_sidebar( array (
-        'name'			 =>  __( 'Footer Column #2', 'backtobasics' ),
-        'id' 			 =>  'footer-column-2-widget-area',
-        'description'	 =>  __( 'The Footer Column #2 widget area', 'backtobasics' ),
-        'before_widget'  =>  '',
-        'after_widget'	 =>  '',
-        'before_title'	 =>  '<h6 class="footer-title widget-title">',
-        'after_title'	 =>  '</h6>',
-    ) );
+    register_sidebar(array(
+        'name' => __('Footer Column #2', 'backtobasics'),
+        'id' => 'footer-column-2-widget-area',
+        'description' => __('The Footer Column #2 widget area', 'backtobasics'),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h6 class="footer-title widget-title">',
+        'after_title' => '</h6>',
+    ));
 
     // Register Footer Column #3
-    register_sidebar( array (
-        'name'			 =>  __( 'Footer Column #3', 'backtobasics' ),
-        'id' 			 =>  'footer-column-3-widget-area',
-        'description'	 =>  __( 'The Footer Column #3 widget area', 'backtobasics' ),
-        'before_widget'  =>  '',
-        'after_widget'	 =>  '',
-        'before_title'	 =>  '<h6 class="footer-title widget-title">',
-        'after_title'	 =>  '</h6>',
-    ) );
+    register_sidebar(array(
+        'name' => __('Footer Column #3', 'backtobasics'),
+        'id' => 'footer-column-3-widget-area',
+        'description' => __('The Footer Column #3 widget area', 'backtobasics'),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h6 class="footer-title widget-title">',
+        'after_title' => '</h6>',
+    ));
 
     // Register Footer Column #4
-    register_sidebar( array (
-        'name'			 =>  __( 'Footer Column #4', 'backtobasics' ),
-        'id' 			 =>  'footer-column-4-widget-area',
-        'description'	 =>  __( 'The Footer Column #4 widget area', 'backtobasics' ),
-        'before_widget'  =>  '',
-        'after_widget'	 =>  '',
-        'before_title'	 =>  '<h6 class="footer-title widget-title">',
-        'after_title'	 =>  '</h6>',
-    ) );
+    register_sidebar(array(
+        'name' => __('Footer Column #4', 'backtobasics'),
+        'id' => 'footer-column-4-widget-area',
+        'description' => __('The Footer Column #4 widget area', 'backtobasics'),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h6 class="footer-title widget-title">',
+        'after_title' => '</h6>',
+    ));
 }
-add_action( 'widgets_init', 'backtobasics_widgets_init' );
+
+add_action('widgets_init', 'backtobasics_widgets_init');
 
 
 /**
  * Enqueue scripts and styles.
  */
-function backtobasics_scripts() {
-	// Enqueue Google Fonts: Wellfleet, Montserrat and Dancing Script
-	wp_enqueue_style( 'backtobasics-fonts', backtobasics_fonts_url() );
-	
-	wp_enqueue_style( 'backtobasics-style', get_stylesheet_uri() );
+function backtobasics_scripts()
+{
+    // Enqueue Google Fonts: Wellfleet, Montserrat and Dancing Script
+    wp_enqueue_style('backtobasics-fonts', backtobasics_fonts_url());
 
-	wp_enqueue_script( 'backtobasics-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
-	wp_localize_script( 'backtobasics-navigation', 'backtobasicsScreenReaderText', array(
-		'expand' => __( 'Expand child menu', 'backtobasics'),
-		'collapse' => __( 'Collapse child menu', 'backtobasics'),
-	));
-    wp_enqueue_script( 'backtobasics-functions', get_template_directory_uri() . '/js/functions.js', array('jquery'), '20170429', true );
-    wp_enqueue_script( 'backtobasics-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+    wp_enqueue_style('backtobasics-style', get_stylesheet_uri());
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+    wp_enqueue_script('backtobasics-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true);
+    wp_localize_script('backtobasics-navigation', 'backtobasicsScreenReaderText', array(
+        'expand' => __('Expand child menu', 'backtobasics'),
+        'collapse' => __('Collapse child menu', 'backtobasics'),
+    ));
+    wp_enqueue_script('backtobasics-functions', get_template_directory_uri() . '/js/functions.js', array('jquery'), '20170429', true);
+    wp_enqueue_script('backtobasics-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true);
+    wp_enqueue_script('backtobasics-theme-script', get_template_directory_uri() . '/js/backtobasics_theme_script.js');
+    wp_enqueue_script('backtobasics-footer-script', get_template_directory_uri() . '/js/backtobasics-footer-script.js', '', '', true);
+    wp_enqueue_script('bootstrap-js', get_template_directory_uri() .'/js/bootstrap.js');
+
+    /*Carofredsul Slides*/
+    wp_enqueue_script('jquery.carouFredSel', get_template_directory_uri() . '/js/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1.js');
+    wp_enqueue_script('carouFredSel-element', get_template_directory_uri() . '/js/carouFredSel-6.2.1/caroufredsel-element.js');
+
+    if (is_singular() && comments_open() && get_option('thread_comments')) {
+        wp_enqueue_script('comment-reply');
+    }
 }
-add_action( 'wp_enqueue_scripts', 'backtobasics_scripts' );
 
+add_action('wp_enqueue_scripts', 'backtobasics_scripts');
+
+function backtobasics_default_settings()
+{
+    $ImageUrl1 = esc_url(get_template_directory_uri() . "/images/slider/image1.jpg");
+    $ImageUrl2 = esc_url(get_template_directory_uri() . "/images/slider/image3.jpg");
+    $ImageUrl3 = esc_url(get_template_directory_uri() . "/images/slider/image4.jpg");
+
+    $wl_theme_options = array(
+        '_frontpage' => '1',
+
+        'slider_image_speed' => '',
+        'slide_image_1' => $ImageUrl1,
+        'slide_title_1' => __('This is my first slide', 'backtobasics'),
+        'slide_desc_1' => __('Lorem Ipsum is simply dummy text of the printing', 'backtobasics'),
+        'slide_btn_text_1' => __('Find out more', 'backtobasics'),
+        'slide_btn_link_1' => '#',
+        'slide_image_2' => $ImageUrl2,
+        'slide_title_2' => __('This is my second slide', 'backtobasics'),
+        'slide_desc_2' => __('Lorem Ipsum is simply dummy text of the printing', 'backtobasics'),
+        'slide_btn_text_2' => __('Find out more', 'backtobasics'),
+        'slide_btn_link_2' => '#',
+        'slide_image_3' => $ImageUrl3,
+        'slide_title_3' => __('This is my third slide', 'backtobasics'),
+        'slide_desc_3' => __('Lorem Ipsum is simply dummy text of the printingi', 'backtobasics'),
+        'slide_btn_text_3' => __('Find out more', 'backtobasics'),
+        'slide_btn_link_3' => '#',
+    );
+    return apply_filters('backtobasics_options', $wl_theme_options);
+}
+
+function backtobasics_get_options()
+{
+    // Options API
+    return wp_parse_args(
+        get_option('backtobasics_options', array()),
+        backtobasics_default_settings()
+    );
+}
+
+/*
+* Slide image Settings
+*/
+
+function wl_reset_slide_image_setting()
+{
+    $ImageUrl = get_template_directory_uri() . "//images/slider/image1.jpg";
+    $ImageUrl2 = get_template_directory_uri() . "/images/slider/image3.jpg";
+    $ImageUrl3 = get_template_directory_uri() . "/images/slider/image4.jpg";
+    $wl_theme_options['slide_image_1'] = $ImageUrl;
+    $wl_theme_options['slide_title_1'] = "This is my first slide";
+    $wl_theme_options['slide_desc_1'] = "Lorem Ipsum is simply dummy text of the printing";
+    $wl_theme_options['slide_btn_text_1'] = "Find out more";
+    $wl_theme_options['slide_btn_link_1'] = "#";
+    $wl_theme_options['slide_image_2'] = $ImageUrl2;
+    $wl_theme_options['slide_title_2'] = "This is my second slide";
+    $wl_theme_options['slide_desc_2'] = "Lorem Ipsum is simply dummy text of the printing";
+    $wl_theme_options['slide_btn_text_2'] = "Find out more";
+    $wl_theme_options['slide_btn_link_2'] = "#";
+    $wl_theme_options['slide_image_3'] = $ImageUrl3;
+    $wl_theme_options['slide_title_3'] = "This is my third slide ";
+    $wl_theme_options['slide_desc_3'] = "Lorem Ipsum is simply dummy text of the printing";
+    $wl_theme_options['slide_btn_text_3'] = "Find out more";
+    $wl_theme_options['slide_btn_link_3'] = "#";
+    $wl_theme_options['_frontpage'] = "1";
+
+
+    update_option('backtobasics_options', $wl_theme_options);
+}
 
 /**
  * Implement the Custom Header slideshow.

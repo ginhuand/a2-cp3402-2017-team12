@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbecfb00-78e4-408d-8b27-5ecbee483cb7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/backtobasics/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/backtobasics/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/backtobasics/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/backtobasics/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/backtobasics/fonts/glyphicons-halflings-regulard41d.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/backtobasics/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/backtobasics/js/bootstrap.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/.gitignore" afterPath="$PROJECT_DIR$/wp-content/themes/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/backtobasics/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/backtobasics/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/backtobasics/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/backtobasics/header.php" />
@@ -17,6 +10,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/backtobasics/sass/maps/style.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/backtobasics/sass/maps/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/backtobasics/sass/site/_site.scss" afterPath="$PROJECT_DIR$/wp-content/themes/backtobasics/sass/site/_site.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/backtobasics/sass/site/header/_header.scss" afterPath="$PROJECT_DIR$/wp-content/themes/backtobasics/sass/site/header/_header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/backtobasics/sass/site/slideshow/_carousel.scss" afterPath="$PROJECT_DIR$/wp-content/themes/backtobasics/sass/site/slideshow/_carousel.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/backtobasics/sass/variables-site/_structure.scss" afterPath="$PROJECT_DIR$/wp-content/themes/backtobasics/sass/variables-site/_structure.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/backtobasics/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/backtobasics/style.css" />
     </list>
@@ -29,7 +23,32 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/backtobasics/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="25" column="109" lean-forward="false" selection-start-line="25" selection-start-column="109" selection-end-line="25" selection-end-column="109" />
+              <folding>
+                <marker date="1494808672832" expanded="true" signature="402:576" ph="..." />
+                <marker date="1494808672832" expanded="true" signature="444:564" ph="{...}" />
+                <marker date="1494808672832" expanded="true" signature="484:556" ph="{&quot;interval&quot;: EXTERNAL_FRAGMENT...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_carousel.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/backtobasics/sass/site/slideshow/_carousel.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="334" column="8" lean-forward="true" selection-start-line="334" selection-start-column="8" selection-end-line="334" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -106,10 +125,10 @@
         <option value="$PROJECT_DIR$/wp-content/themes/backtobasics/js/functions.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/backtobasics/sass/site/_site.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/backtobasics/sass/site/slideshow/_slideshow.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/backtobasics/sass/site/slideshow/_carousel.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/backtobasics/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/backtobasics/home.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/backtobasics/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/backtobasics/sass/site/slideshow/_carousel.scss" />
       </list>
     </option>
   </component>
@@ -337,15 +356,16 @@
       <workItem from="1494792611721" duration="2157000" />
       <workItem from="1494795368236" duration="4026000" />
       <workItem from="1494802147383" duration="763000" />
-      <workItem from="1494803050907" duration="5845000" />
+      <workItem from="1494803050907" duration="6372000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84237000" />
+    <option name="totallyTimeSpent" value="84764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -353,7 +373,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15332326" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15332326" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -696,31 +716,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/backtobasics/sass/site/slideshow/_carousel.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="2417" column="21" lean-forward="true" selection-start-line="2417" selection-start-column="21" selection-end-line="2417" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/backtobasics/inc/customizer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3145">
           <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/backtobasics/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="73" lean-forward="false" selection-start-line="62" selection-start-column="73" selection-end-line="62" selection-end-column="73" />
-          <folding>
-            <marker date="1494808672832" expanded="true" signature="402:576" ph="..." />
-            <marker date="1494808672832" expanded="true" signature="444:564" ph="{...}" />
-            <marker date="1494808672832" expanded="true" signature="484:556" ph="{&quot;interval&quot;: EXTERNAL_FRAGMENT...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -736,6 +736,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="383" column="0" lean-forward="true" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/backtobasics/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="25" column="109" lean-forward="false" selection-start-line="25" selection-start-column="109" selection-end-line="25" selection-end-column="109" />
+          <folding>
+            <marker date="1494808672832" expanded="true" signature="402:576" ph="..." />
+            <marker date="1494808672832" expanded="true" signature="444:564" ph="{...}" />
+            <marker date="1494808672832" expanded="true" signature="484:556" ph="{&quot;interval&quot;: EXTERNAL_FRAGMENT...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/backtobasics/sass/site/slideshow/_carousel.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="334" column="8" lean-forward="true" selection-start-line="334" selection-start-column="8" selection-end-line="334" selection-end-column="8" />
           <folding />
         </state>
       </provider>
